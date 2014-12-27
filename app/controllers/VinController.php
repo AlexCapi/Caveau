@@ -4,8 +4,13 @@ class VinController extends Controller {
 
 	public function index()
 	{
-        
-        return View::make('pages/vins');
+        $vinsCategories = [];
+
+        $categories = Categorie::all();
+        foreach($categories as $categorie){
+            $vinsCategories[$categorie->libelle] = $categorie->vins()->get();
+        }
+        return View::make('pages/vins', array('vinsCategories' => $vinsCategories));
 	}
 
 }

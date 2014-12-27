@@ -13,7 +13,7 @@
         </address>
 
         <address>
-            <strong>Notre email</strong><br>
+            <strong>Email</strong><br>
             <a href="mailto:caveauquinard@orange.fr">caveauquinard@orange.fr</a>
         </address>
     </div>

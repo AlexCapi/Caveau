@@ -27,6 +27,25 @@ body {
     color: #FFFFFF;
 }
 
+.footer-divider {
+    margin-bottom: 50px; /* Space out the Bootstrap <hr> more */
+    margin-top: 0;
+}
+
+h2.title{
+    color: #ac2925;
+    font-size: 50px;
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -1px;
+    border-bottom: 1px solid #ac2925;
+    padding-bottom: 20px;
+    margin-bottom: 50px;
+}
+
+/* SECTION
+-------------------------------------------------- */
+
 section.header{
     height: 120px;
 }
@@ -38,9 +57,26 @@ section.grey{
     background-color: #E7E4E4;
 }
 
-.footer-divider {
-    margin-bottom: 50px; /* Space out the Bootstrap <hr> more */
-    margin-top: 0;
+section .section-title{
+    text-align: center;
+    width: 900px;
+    margin: 0 auto 100px auto;
+}
+
+section h1{
+    color: #ac2925;
+    font-size: 50px;
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -1px;
+}
+
+section p.section-description{
+    text-align: center;
+    font-size: 35px;
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -1px;
 }
 
 
@@ -129,7 +165,6 @@ section.grey{
 
 .featurette-divider {
     margin: 80px 0; /* Space out the Bootstrap <hr> more */
-    border-top: 1px solid #AD1111;
 }
 
 /* Thin out the marketing headings */
@@ -138,6 +173,7 @@ section.grey{
     line-height: 1;
     letter-spacing: -1px;
 }
+
 
 
 /* RESPONSIVE CSS
