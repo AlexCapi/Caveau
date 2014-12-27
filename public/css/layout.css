@@ -277,11 +277,14 @@ a.block-categorie:hover{
     text-align: center;
     color: #ffffff;
     font-size: 17px;
-    height: 250px;
 }
 
-#contact .tuile-contact.form{
-    height: 600px;
+#contact .tuile-contact .row{
+    margin-bottom: 20px;
+}
+
+#contact .tuile-contact.form .icone{
+    margin-bottom: 20px;
 }
 
 #contact .tuile-contact.form div{

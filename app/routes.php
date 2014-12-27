@@ -17,6 +17,7 @@ Route::get( '/', array('as' => '/', 'uses' => 'HomeController@showHome'));
 //Pages
 Route::get( 'vins', 'VinController@index');
 Route::get( 'contact', 'ContactController@index');
+Route::post( 'contact', 'ContactController@sendForm');
 
 //Authentication
 Route::get( 'user/login',    array('as' => 'user/login', 'uses' =>'UserController@login'));

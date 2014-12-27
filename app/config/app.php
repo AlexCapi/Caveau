@@ -122,6 +122,7 @@ return array(
 		'Illuminate\View\ViewServiceProvider',
 		'Illuminate\Workbench\WorkbenchServiceProvider',
         'Frozennode\Administrator\AdministratorServiceProvider',
+        'Greggilbert\Recaptcha\RecaptchaServiceProvider'
 	),
 
 	/*
