@@ -60,7 +60,7 @@
                 <span class="glyphicon glyphicon-glass icones-lg dark-purple" aria-hidden="true"></span>
                 <h2 class="dark-purple">Des vins de qualités</h2>
                 <p>Venez découvrir nos vins de qualités, qui ont façonné la réputation de notre caveau depuis des années et dont les différents crus seront vous surprendre par leur goût exceptionnel.</p>
-                <p><a class="btn btn-default" href="#" role="button">Voir nos vins »</a></p>
+                <p><a class="btn btn-default" href="{{ URL::to('vins') }}" role="button">Voir nos vins »</a></p>
             </div><!-- /.col-lg-4 -->
             <div class="col-lg-4">
                 <span class="glyphicon glyphicon-shopping-cart icones-lg dark-purple" aria-hidden="true"></span>
@@ -71,8 +71,8 @@
             <div class="col-lg-4">
                 <span class="glyphicon glyphicon-gift icones-lg dark-purple" aria-hidden="true"></span>
                 <h2 class="dark-purple">De bonnes idées cadeaux</h2>
-                <p>Le caveau Quinard vous propose des coffrets cadeaux, composés de nos mailleurs bouteilles ainsi que de produits du terroir. Idéal pour offrir ! </p>
-                <p><a class="btn btn-default" href="#" role="button">Voir nos coffrets »</a></p>
+                <p>Le caveau Quinard vous propose des coffrets cadeaux, composés de nos meilleures bouteilles ainsi que de produits du terroir. Idéal pour offrir ! </p>
+                <p><a class="btn btn-default" href="{{ URL::to('caveau') }}" role="button">Voir nos coffrets »</a></p>
             </div><!-- /.col-lg-4 -->
         </div><!-- /.row -->
 

@@ -20,9 +20,9 @@
                         <li {{{ (Request::is('/') ? 'class=active' : '') }}}><a href="{{ URL::route('/') }}">Accueil</a></li>
                         <li><a href="#about">Commander</a></li>
                         <li {{{ (Request::is('vins') ? 'class=active' : '') }}}><a href="{{ URL::to('vins') }}">Nos Vins</a></li>
-                        <li><a href="#contact">Caveau</a></li>
-                        <li><a href="#contact">Recettes</a></li>
+                        <li {{{ (Request::is('caveau') ? 'class=active' : '') }}}><a href="{{ URL::to('caveau') }}">Caveau</a></li>
                         <li {{{ (Request::is('contact') ? 'class=active' : '') }}}><a href="{{ URL::to('contact') }}">Contact</a></li>
+                        <li {{{ (Request::is('diaporama') ? 'class=active' : '') }}}><a href="{{ URL::to('diaporama') }}">Diaporama</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
                         @if (Auth::check())

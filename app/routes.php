@@ -15,9 +15,11 @@
 Route::get( '/', array('as' => '/', 'uses' => 'HomeController@showHome'));
 
 //Pages
-Route::get( 'vins', 'VinController@index');
-Route::get( 'contact', 'ContactController@index');
+Route::get(  'vins', 'VinController@index');
+Route::get(  'contact', 'ContactController@index');
 Route::post( 'contact', 'ContactController@sendForm');
+Route::get(  'caveau', 'CaveauController@index');
+Route::get(  'diaporama', 'DiaporamaController@index');
 
 //Authentication
 Route::get( 'user/login',    array('as' => 'user/login', 'uses' =>'UserController@login'));
