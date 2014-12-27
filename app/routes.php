@@ -11,7 +11,18 @@
 |
 */
 
-Route::get('/', function()
-{
-	return View::make('hello');
-});
+//Homepage
+Route::get( '/', array('as' => '/', 'uses' => 'HomeController@showHome'));
+
+//Pages
+Route::get( 'vins', 'VinController@index');
+
+//Authentication
+Route::get( 'user/login',    array('as' => 'user/login', 'uses' =>'UserController@login'));
+Route::post('user/login',    array('as' => 'user/connect', 'uses'=>'UserController@connect'));
+Route::get( 'user/logout',   array('as' => 'user/logout', 'uses'=>'UserController@logout'));
+
+//Recuperation du mot de passe
+Route::get(" request", "UserController@showRequest");
+Route::post("request", "UserController@request");
+Route::post("reset/{token}", "UserController@reset");
