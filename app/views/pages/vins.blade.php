@@ -12,9 +12,24 @@
             </div>
         </div>
 
+        <div class="row">
+            <div class="col-xs-12 text-center">
+                <p class="text-muted">Nos vins par catégorie</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 text-center">
+                @foreach ($vinsCategories as $categorie => $vins)
+                    @if(sizeof($vins) != 0)
+                        <a class="block-categorie" href="#{{ $categorie }}">{{ $categorie }}</a>
+                    @endif
+                @endforeach
+            </div>
+        </div>
+
         @foreach ($vinsCategories as $categorie => $vins)
             @if(sizeof($vins) != 0)
-                <h2 class="title">{{ $categorie }}</h2>
+                <h2 class="title" id="{{ $categorie }}">{{ $categorie }}</h2>
 
                 @foreach ($vins as $key => $vin)
                     @if ($key % 2 == 0)

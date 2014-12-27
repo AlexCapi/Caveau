@@ -43,6 +43,10 @@ h2.title{
     margin-bottom: 50px;
 }
 
+a.backTop{
+    color: #ac2925;
+}
+
 /* SECTION
 -------------------------------------------------- */
 
@@ -233,13 +237,71 @@ img.brightness
     margin: 0 auto;
 }
 
-#home{
-
-}
-
 .login{
     padding: 20px;
     background-color: #FFFFFF;
     border: 1px solid #D0D0D0;
     border-radius: 5px;
+}
+
+.block-categorie{
+    display: inline-block;
+    padding: 20px;
+    background-color: #ac2925;
+    margin-bottom: 50px;
+}
+
+a.block-categorie{
+    color: #FFFFFF;
+    font-size: 17px;
+    border: 1px solid #ac2925;
+    margin-right: -3px;
+}
+
+a.block-categorie:hover{
+    background-color: #D00010;
+    border: 1px solid #c63424;
+    text-decoration: none;
+}
+
+/* Contact
+------------------------- */
+
+#contact .ligne-tuile{
+    margin-bottom: 30px;
+}
+
+#contact .tuile-contact{
+    background-color: #ac2925;
+    padding: 20px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 17px;
+    height: 250px;
+}
+
+#contact .tuile-contact.form{
+    height: 600px;
+}
+
+#contact .tuile-contact.form div{
+    text-align: left;
+}
+
+#contact .tuile-contact .icone{
+    color: #ffffff;
+    font-size: 50px;
+}
+
+#contact .tuile-contact a{
+    color: #ffffff;
+}
+
+#contact .tuile-contact .centered{
+    margin-top: 10px;
+}
+
+#contact .tuile-contact blockquote{
+    text-align: left;
+    font-size: 15px;
 }

@@ -22,6 +22,7 @@
                         <li {{{ (Request::is('vins') ? 'class=active' : '') }}}><a href="{{ URL::to('vins') }}">Nos Vins</a></li>
                         <li><a href="#contact">Caveau</a></li>
                         <li><a href="#contact">Recettes</a></li>
+                        <li {{{ (Request::is('contact') ? 'class=active' : '') }}}><a href="{{ URL::to('contact') }}">Contact</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
                         @if (Auth::check())

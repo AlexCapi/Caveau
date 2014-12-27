@@ -3,7 +3,7 @@
 <hr class="footer-divider">
 <footer>
     <div class="container">
-        <p class="pull-right"><a href="#">Retour en haut de page</a></p>
+        <p class="pull-right"><a class="backTop" href="#">Retour en haut de page</a></p>
         <p>© 2014 Caveau Quinard · Viticulteur · Récoltant</p>
         <address>
             <strong>Caveau QUINARD</strong><br>
