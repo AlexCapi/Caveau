@@ -4,7 +4,8 @@ class DiaporamaController extends Controller {
 
 	public function index()
 	{
-        return View::make('pages/diaporama');
+        $images = Diaporama::all();
+        return View::make('pages/diaporama', array('images' => $images));
 	}
 
 }

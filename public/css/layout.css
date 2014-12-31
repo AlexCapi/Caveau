@@ -47,6 +47,27 @@ a.backTop{
     color: #ac2925;
 }
 
+img.img-clickable{
+    cursor: pointer;
+}
+
+/* FACEBOOK
+------------------------- */
+
+.facebook{
+    background-color: #3B5998;
+    cursor: pointer;
+}
+
+.facebook a{
+    color: #ffffff !important;
+}
+
+.facebook .buttonShare{
+    display: none;
+}
+
+
 /* SECTION
 -------------------------------------------------- */
 
@@ -307,4 +328,116 @@ a.block-categorie:hover{
 #contact .tuile-contact blockquote{
     text-align: left;
     font-size: 15px;
+}
+
+/* Diaporama
+------------------------- */
+
+.gallery li {
+    width: 205px;
+    height: 175px;
+    display: block;
+    float: left;
+    margin-right: 6px;
+    margin-bottom: 6px;
+}
+
+.gallery li img{
+    cursor: pointer;
+}
+
+.list-unstyled {
+    padding-left: 0;
+    list-style: none;
+}
+
+/* Commander
+------------------------- */
+
+.commande-heading {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -1px;
+}
+
+.selection{
+    text-align: center;
+    padding-bottom: 20px;
+    background-color: #EBEBEB;
+}
+
+h5.title-selection {
+    text-align: left;
+    padding: 21px 20px;
+    font-size: 18px;
+    background-color: #ac2925;
+    color: #ffffff;
+    margin: 0;
+    font-weight: 300;
+}
+
+.selection .block-total,  #commander .selection .block-total-recap{
+    margin-bottom: 5px;
+    border-top: 1px solid #ffffff;
+    padding-top: 15px;
+}
+
+table.tab-vin-selection {
+    table-layout: fixed;
+    text-align: left;
+    margin-bottom: 0;
+}
+
+table.tab-vin-selection td:last-child {
+    padding-right: 15px;
+}
+table.tab-vin-selection td:first-child {
+    padding-left: 20px;
+}
+
+table.tab-vin-selection tr td {
+    background-color: #ebebeb;
+    padding: 20px 5px;
+    border: none;
+}
+
+table.tab-vin-selection td:nth-child(1), table.tab-vin-selection td:nth-child(4) {
+    width: 284px;
+}
+
+.selection .block-total p.price, .selection .block-total-recap p.price{
+    text-align: right;
+    padding-right: 10px;
+    font-weight: 900;
+}
+
+.selection .block-total p.total, .selection .block-total-recap p.total{
+    text-align: left;
+    padding-left: 20px;
+}
+
+#commander button.btn-commander{
+    width: 90%;
+}
+
+#commander .icone-remove-commande{
+    top: 4px;
+    cursor: pointer;
+}
+
+#recapitulatif .link-back-command{
+    cursor: pointer;
+    color: #ac2925;
+    font-size: 17px;
+    margin-top: 20px;
+}
+
+#recapitulatif .form-commande{
+    padding: 20px;
+    background-color: #ebebeb;
+}
+
+#recapitulatif .form-commande .row{
+    margin-bottom: 20px;
 }

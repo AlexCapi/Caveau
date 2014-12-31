@@ -4,6 +4,7 @@
         <meta charset="UTF-8" />
         <title>Caveau Quinard</title>
         <link href="{{ URL::asset('bower/bootstrap/dist/css/bootstrap.min.css') }}" rel="stylesheet">
+        <link href="{{ URL::asset('bower/lightgallery/light-gallery/css/lightgallery.css') }}" rel="stylesheet">
         <link href="{{ URL::asset('css/layout.css') }}" rel="stylesheet">
     </head>
     <body>
@@ -25,4 +26,5 @@
     </body>
     {{HTML::script('bower/jquery/dist/jquery.min.js')}}
     {{HTML::script('bower/bootstrap/dist/js/bootstrap.min.js')}}
+    {{HTML::script('bower/lightgallery/light-gallery/js/lightgallery.min.js')}}
 </html>

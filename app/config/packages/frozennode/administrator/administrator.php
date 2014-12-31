@@ -54,8 +54,10 @@ return array(
 	'menu' => array(
         'vins',
         'categories',
+        'diaporama',
         'actualites',
-        'recompenses'
+        'recompenses',
+        'documents'
     ),
 
 	/**

@@ -20,6 +20,8 @@ Route::get(  'contact', 'ContactController@index');
 Route::post( 'contact', 'ContactController@sendForm');
 Route::get(  'caveau', 'CaveauController@index');
 Route::get(  'diaporama', 'DiaporamaController@index');
+Route::get(  'commander', 'CommanderController@index');
+Route::post( 'commander', 'CommanderController@commander');
 
 //Authentication
 Route::get( 'user/login',    array('as' => 'user/login', 'uses' =>'UserController@login'));
