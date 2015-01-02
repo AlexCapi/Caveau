@@ -33,7 +33,7 @@ return array(
         'fichier' => array(
             'title' => 'Documents',
             'type' => 'file',
-            'location' => storage_path() . '/media_documents/',
+            'location' => public_path() . '/documents/',
             'naming' => 'random',
             'length' => 20,
             'size_limit' => 2

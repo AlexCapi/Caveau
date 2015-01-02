@@ -22,6 +22,7 @@ Route::get(  'caveau', 'CaveauController@index');
 Route::get(  'diaporama', 'DiaporamaController@index');
 Route::get(  'commander', 'CommanderController@index');
 Route::post( 'commander', 'CommanderController@commander');
+Route::get(  'actualites', 'ActualiteController@index');
 
 //Authentication
 Route::get( 'user/login',    array('as' => 'user/login', 'uses' =>'UserController@login'));

@@ -3,50 +3,58 @@
 <section class="header"></section>
 <section id="caveau">
     <div class="container marketing">
-        <div class="row">
-            <div class="col-xs-12">
-                <div class="section-title">
-                    <h1>Visite du caveau</h1>
-                    <p class="section-description">Consulter les fiches détaillés de nos vins. Et si vous vous laisser séduire, vous pouvez même commander en ligne.</p>
-                </div>
+
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading dark-purple"> Découvrez notre caveau. <span class="text-muted">Nous vous réservons quelques surprises.</span></h2>
+                <p class="lead">Réception guidée en trois langues : français, hollandais et anglais. Produits du terroir. Personnalisation d'étiquettes.</p>
+            </div>
+            <div class="col-md-5">
+                <img class="featurette-image img-responsive" style="margin-top: 80px;" alt="Image comptoir" src="{{ URL::asset('images/interieur-caveau.jpg') }}" data-holder-rendered="true">
             </div>
         </div>
-        <!-- Three columns of text below the carousel -->
-        <div class="row">
-            <div class="col-lg-4">
-                <span class="glyphicon glyphicon-glass icones-lg dark-purple" aria-hidden="true"></span>
-                <h2 class="dark-purple">Des vins de qualités</h2>
-                <p>Venez découvrir nos vins de qualités, qui ont façonné la réputation de notre caveau depuis des années et dont les différents crus seront vous surprendre par leur goût exceptionnel.</p>
-                <p><a class="btn btn-default" href="{{ URL::to('vins') }}" role="button">Voir nos vins »</a></p>
-            </div><!-- /.col-lg-4 -->
-            <div class="col-lg-4">
-                <span class="glyphicon glyphicon-shopping-cart icones-lg dark-purple" aria-hidden="true"></span>
-                <h2 class="dark-purple">Commander en ligne</h2>
-                <p>Avec notre nouveau site web, commander votre vin depuis chez vous. Nous préparons votre commande et vous n'avez plus qu'à passer la récupérer.</p>
-                <p><a class="btn btn-default" href="#" role="button">Commander »</a></p>
-            </div><!-- /.col-lg-4 -->
-            <div class="col-lg-4">
-                <span class="glyphicon glyphicon-gift icones-lg dark-purple" aria-hidden="true"></span>
-                <h2 class="dark-purple">De bonnes idées cadeaux</h2>
-                <p>Le caveau Quinard vous propose des coffrets cadeaux, composés de nos meilleures bouteilles ainsi que de produits du terroir. Idéal pour offrir ! </p>
-                <p><a class="btn btn-default" href="{{ URL::to('caveau') }}" role="button">Voir nos coffrets »</a></p>
-            </div><!-- /.col-lg-4 -->
-        </div><!-- /.row -->
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-5">
+                <img class="featurette-image img-responsive" alt="Image champ" src="{{ URL::asset('images/terroir.jpg') }}" data-holder-rendered="true">
+            </div>
+            <div class="col-md-7">
+                <h2 class="featurette-heading dark-purple">Vente de produits <span class="text-muted">du terroir.</span></h2>
+                <p class="lead">Des sirops, coulis, confitures, en passant par le miel et les escargots, beaucoup d'excellent produits locaux sont en vente dans notre caveau.</p>
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
 
         <div class="row">
             <div class="col-xs-12">
                 <div class="section-title">
-                    <h1>Vente de produits du terroir</h1>
-                    <p class="section-description">Consulter les fiches détaillés de nos vins. Et si vous vous laisser séduire, vous pouvez même commander en ligne.</p>
+                    <h1>Des idées cadeaux pour toutes occasions</h1>
+                    <p class="section-description">Nous confectionnons avec soins de délicieux paniers garnis de nos meilleurs vins et produits du terroir.</p>
                 </div>
             </div>
-        </div>
-
-        <div class="row">
-            <div class="col-xs-12">
-                <div class="section-title">
-                    <h1>Des coffrets cadeaux pour tous les goûts</h1>
-                    <p class="section-description">Consulter les fiches détaillés de nos vins. Et si vous vous laisser séduire, vous pouvez même commander en ligne.</p>
+            <div class="row">
+                <div class="col-sm-4">
+                    <img class="image-coffret img-responsive" src="{{ URL::asset('images/coffret.jpg') }}">
+                </div>
+                <div class="col-sm-4">
+                    <img class="image-coffret img-responsive" src="{{ URL::asset('images/coffret2.jpg') }}">
+                </div>
+                <div class="col-sm-4">
+                    <img class="image-coffret img-responsive" src="{{ URL::asset('images/coffret3.jpg') }}">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <img class="image-coffret img-responsive" src="{{ URL::asset('images/coffret4.jpg') }}">
+                </div>
+                <div class="col-sm-4">
+                    <img class="image-coffret img-responsive" src="{{ URL::asset('images/coffret5.jpg') }}">
+                </div>
+                <div class="col-sm-4">
+                    <img class="image-coffret img-responsive" src="{{ URL::asset('images/coffret8.jpg') }}">
                 </div>
             </div>
         </div>

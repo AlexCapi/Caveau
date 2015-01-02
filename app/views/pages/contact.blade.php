@@ -57,7 +57,7 @@
                                     {{ Form::captcha() }}
                                 </div>
                                 <div class="col-xs-3 text-right">
-                                    {{ Form::submit("Envoyer", array('class' => 'btn btn-default', 'style' => 'margin-top:20px;')) }}
+                                    {{ Form::submit("Envoyer", array('class' => 'btn btn-purple', 'style' => 'margin-top:20px;')) }}
                                 </div>
                             </div>
                             {{ Form::close() }}

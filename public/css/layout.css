@@ -199,6 +199,10 @@ section p.section-description{
     letter-spacing: -1px;
 }
 
+.featurette.last-featurette{
+    margin-bottom: 50px;
+}
+
 
 
 /* RESPONSIVE CSS
@@ -293,10 +297,10 @@ a.block-categorie:hover{
 }
 
 #contact .tuile-contact{
-    background-color: #ac2925;
+    background-color: #ebebeb;
     padding: 20px;
     text-align: center;
-    color: #ffffff;
+    color: #ac2925;
     font-size: 17px;
 }
 
@@ -313,12 +317,12 @@ a.block-categorie:hover{
 }
 
 #contact .tuile-contact .icone{
-    color: #ffffff;
+    color: #b8b8b8;
     font-size: 50px;
 }
 
 #contact .tuile-contact a{
-    color: #ffffff;
+    color: #ac2925;
 }
 
 #contact .tuile-contact .centered{
@@ -328,6 +332,7 @@ a.block-categorie:hover{
 #contact .tuile-contact blockquote{
     text-align: left;
     font-size: 15px;
+    border-color: #ffffff;
 }
 
 /* Diaporama
@@ -440,4 +445,11 @@ table.tab-vin-selection td:nth-child(1), table.tab-vin-selection td:nth-child(4)
 
 #recapitulatif .form-commande .row{
     margin-bottom: 20px;
+}
+
+/* CAVEAU
+------------------------- */
+
+#caveau .image-coffret{
+    padding: 15px 0;
 }

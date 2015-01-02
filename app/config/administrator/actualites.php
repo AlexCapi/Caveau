@@ -18,12 +18,14 @@ return array(
      * The display columns
      */
     'columns' => array(
+        'titre',
         'message'
     ),
     /**
      * The editable fields
      */
     'edit_fields' => array(
+        'titre',
         'message' => array(
             'type' => 'textarea'
         ),
