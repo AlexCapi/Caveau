@@ -17,7 +17,8 @@ class HomeController extends Controller {
 
 	public function showHome()
 	{
-        return View::make('home/homepage');
+        $actus = Actualite::all();
+        return View::make('home/homepage', array('actus' => $actus));
 	}
 
 }

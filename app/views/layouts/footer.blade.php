@@ -10,7 +10,6 @@
             201 route du Lit au roi<br>
             Massignieu de Rives, 01300<br>
             <abbr title="Numéro de téléphone">Tel:</abbr> 04 79 42 10 18
-            <div class="fb-like pull-right" data-href="https://www.facebook.com/pages/Caveau-Quinard/262742030464209" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
         </address>
 
         <address>

@@ -3,7 +3,7 @@
 <section class="header"></section>
 <section id="vins">
     <div class="container">
-        <div class="row">
+        <div class="row" id="header">
             <div class="col-xs-12">
                 <div class="section-title">
                     <h1>Les meilleurs vins du Bugey</h1>
@@ -13,12 +13,12 @@
         </div>
 
         <div class="row">
-            <div class="col-xs-12 text-center">
+            <div id="description_categories" class="col-xs-12 text-center">
                 <p class="text-muted">Nos vins par catégorie</p>
             </div>
         </div>
         <div class="row">
-            <div class="col-xs-12 text-center">
+            <div id="categories" class="col-xs-12 text-center">
                 @foreach ($vinsCategories as $categorie => $vins)
                     @if(sizeof($vins) != 0)
                         <a class="block-categorie" href="#{{ $categorie }}">{{ $categorie }}</a>
@@ -26,7 +26,9 @@
                 @endforeach
             </div>
         </div>
+    </div>
 
+    <div class="container">
         @foreach ($vinsCategories as $categorie => $vins)
             @if(sizeof($vins) != 0)
                 <h2 class="title" id="{{ $categorie }}">{{ $categorie }}</h2>

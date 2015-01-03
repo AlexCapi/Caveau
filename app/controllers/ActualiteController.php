@@ -4,10 +4,9 @@ class ActualiteController extends Controller {
 
 	public function index()
 	{
-        $actus = Actualite::all();
         $recompenses = $this->getRecompenses();
         $documents = Document::all();
-        return View::make('pages/actualites', array('actus' => $actus, 'recompenses' => $recompenses, 'documents' => $documents));
+        return View::make('pages/actualites', array('recompenses' => $recompenses, 'documents' => $documents));
 	}
 
     protected function getRecompenses()

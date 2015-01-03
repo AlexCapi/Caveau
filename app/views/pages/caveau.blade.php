@@ -30,7 +30,7 @@
 
         <div class="row">
             <div class="col-xs-12">
-                <div class="section-title">
+                <div id="cadeaux" class="section-title">
                     <h1>Des idées cadeaux pour toutes occasions</h1>
                     <p class="section-description">Nous confectionnons avec soins de délicieux paniers garnis de nos meilleurs vins et produits du terroir.</p>
                 </div>

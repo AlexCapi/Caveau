@@ -4,17 +4,6 @@
 <section id="actualites">
     <div class="container marketing">
 
-        @if (!empty($actus))
-        @foreach ($actus as $actu)
-        <div class="alert alert-danger" >
-            {{ $actu->titre }} : {{ $actu->message }}
-            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-            </button>
-        </div>
-        @endforeach
-        @endif
-
         <div class="row">
             <div class="col-xs-12">
                 <div class="section-title">
@@ -69,15 +58,22 @@
                     <thead>
                     <tr>
                         <th>Titre</th>
+                        <th>Visuel</th>
                         <th>Actions</th>
                     </tr>
                     </thead>
                     <tbody>
                     @foreach ($documents as $doc)
                     <tr>
-                        <td>{{ $doc->titre }}</td>
+                        <td style="vertical-align: middle">{{ $doc->titre }}</td>
                         <td>
-                            <a target="_blank" class="btn btn-purple" href="{{ URL::asset('documents/'.$doc->fichier) }}">Voir</a>
+                            <img class="img-preview" src="{{ URL::asset('documents/'.$doc->fichier) }}">
+                        </td>
+                        <td style="vertical-align: middle">
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-purple" onclick="showModal('{{ $doc->titre }}', '{{ URL::asset('.documents/$doc->fichier.') }}', '{{ $doc->fichier }}')">
+                                Voir
+                            </button>
                         </td>
                     </tr>
                     @endforeach
@@ -85,6 +81,20 @@
                 </table>
             </div>
         </div>
-
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">{{ $doc->titre }}</h4>
+                </div>
+                <div class="modal-body text-center">
+                    <img id="myModalImg" src="{{ URL::asset('documents/'.$doc->fichier) }}">
+                </div>
+            </div>
+        </div>
     </div>
 </section>
+{{HTML::script('js/general.js')}}

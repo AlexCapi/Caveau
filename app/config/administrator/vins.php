@@ -23,8 +23,6 @@ return array(
         'description',
         'specificite',
         'tav',
-        'im',
-        'etiquette',
         'prix',
         'categorie' => array(
             'title' => "Categorie du vin",
@@ -50,8 +48,6 @@ return array(
             'type' => 'number',
             'symbol' => '%',
         ),
-        'im',
-        'etiquette',
         'prix' => array(
             'type' => 'number',
             'symbol' => '€',

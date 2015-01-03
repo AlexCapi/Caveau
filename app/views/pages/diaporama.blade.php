@@ -13,15 +13,19 @@
         </div>
         <div class="row">
             <div class="col-md-12">
-                <ul id="lightGallery" class="gallery list-unstyled">
-                    @foreach ($images as $image)
-                    @if( $image->selected)
-                    <li data-src="{{ URL::asset('images/uploads/originals/'.$image->image) }}" data-sub-html="<p>{{ $image->description }}</p>">
-                        <img class="img-responsive" src="{{ URL::asset('images/uploads/thumbs/medium/'.$image->image) }}" />
-                    </li>
-                    @endif
-                    @endforeach
-                </ul>
+                <div class="row">
+                    <div class="col-md-12">
+                        <ul id="lightGallery" class="gallery list-unstyled">
+                            @foreach ($images as $image)
+                            @if( $image->selected)
+                                <li data-src="{{ URL::asset('images/uploads/originals/'.$image->image) }}" data-sub-html="<p>{{ $image->description }}</p>">
+                                    <img class="img-diaporama" src="{{ URL::asset('images/uploads/thumbs/medium/'.$image->image) }}" />
+                                </li>
+                            @endif
+                            @endforeach
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

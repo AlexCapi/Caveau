@@ -32,6 +32,24 @@ body {
     margin-top: 0;
 }
 
+.alert-home{
+    margin-bottom: 60px;
+}
+
+.alert-home .titre{
+    font-weight: 600;
+}
+
+img.img-preview{
+    width: 85px;
+    height: 68px;
+}
+
+img.img-diaporama{
+    width: 205px;
+    height: 150px;
+}
+
 h2.title{
     color: #ac2925;
     font-size: 50px;
@@ -63,8 +81,12 @@ img.img-clickable{
     color: #ffffff !important;
 }
 
-.facebook .buttonShare{
-    display: none;
+.facebook a:hover{
+    color: #ffffff !important;
+}
+
+li.facebook:hover{
+    background-color: #394e8b;
 }
 
 
@@ -309,7 +331,7 @@ a.block-categorie:hover{
 }
 
 #contact .tuile-contact.form .icone{
-    margin-bottom: 20px;
+
 }
 
 #contact .tuile-contact.form div{
@@ -317,7 +339,12 @@ a.block-categorie:hover{
 }
 
 #contact .tuile-contact .icone{
-    color: #b8b8b8;
+    color: #ac2925;
+    font-size: 50px;
+}
+
+#contact .tuile-contact .icone-fb{
+    color: #3B5998;
     font-size: 50px;
 }
 
@@ -335,12 +362,16 @@ a.block-categorie:hover{
     border-color: #ffffff;
 }
 
+#contact hr.contact-divider{
+    border-color: #ffffff;
+}
+
 /* Diaporama
 ------------------------- */
 
 .gallery li {
-    width: 205px;
-    height: 175px;
+    width: 215px;
+    height: 185px;
     display: block;
     float: left;
     margin-right: 6px;
@@ -452,4 +483,10 @@ table.tab-vin-selection td:nth-child(1), table.tab-vin-selection td:nth-child(4)
 
 #caveau .image-coffret{
     padding: 15px 0;
+}
+
+#categories.affix{
+    top: 1px;
+    left: 425;
+    z-index: 100;
 }

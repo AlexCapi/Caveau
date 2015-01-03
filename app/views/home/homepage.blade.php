@@ -54,6 +54,20 @@
 <div class="container marketing">
     <div id="home">
 
+        @if (!empty($actus))
+        @foreach ($actus as $actu)
+        <div class="alert alert-danger alert-home" >
+            <p class="titre">
+                {{ $actu->titre }}
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </p>
+            <p class="text"> {{ $actu->message }}</p>
+        </div>
+        @endforeach
+        @endif
+
         <!-- Three columns of text below the carousel -->
         <div class="row">
             <div class="col-lg-4">
@@ -72,7 +86,7 @@
                 <span class="glyphicon glyphicon-gift icones-lg dark-purple" aria-hidden="true"></span>
                 <h2 class="dark-purple">De bonnes idées cadeaux</h2>
                 <p>Le caveau Quinard vous propose des coffrets cadeaux, composés de nos meilleures bouteilles ainsi que de produits du terroir. Idéal pour offrir ! </p>
-                <p><a class="btn btn-default" href="{{ URL::to('caveau') }}" role="button">Voir nos coffrets »</a></p>
+                <p><a class="btn btn-default" href="{{ URL::to('caveau') }}#cadeaux" role="button">Voir nos coffrets »</a></p>
             </div><!-- /.col-lg-4 -->
         </div><!-- /.row -->
 
