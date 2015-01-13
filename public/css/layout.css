@@ -27,6 +27,11 @@ body {
     color: #FFFFFF;
 }
 
+a:focus{
+    color: #FFFFFF !important;
+    text-decoration: none !important;
+}
+
 .footer-divider {
     margin-bottom: 50px; /* Space out the Bootstrap <hr> more */
     margin-top: 0;
@@ -308,6 +313,7 @@ a.block-categorie{
 a.block-categorie:hover{
     background-color: #D00010;
     border: 1px solid #c63424;
+    color: #FFFFFF;
     text-decoration: none;
 }
 
@@ -395,6 +401,7 @@ a.block-categorie:hover{
     font-weight: 300;
     line-height: 1;
     letter-spacing: -1px;
+    min-height: 80px;
 }
 
 .selection{

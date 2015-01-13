@@ -91,7 +91,7 @@
                     <h4 class="modal-title" id="myModalLabel">{{ $doc->titre }}</h4>
                 </div>
                 <div class="modal-body text-center">
-                    <img id="myModalImg" src="{{ URL::asset('documents/'.$doc->fichier) }}">
+                    <img id="myModalImg" class="img-responsive" src="{{ URL::asset('documents/'.$doc->fichier) }}">
                 </div>
             </div>
         </div>

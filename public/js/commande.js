@@ -50,16 +50,18 @@ var supprimerVin = function(id)
 {
     $.each(vins, function(index, value){
         console.log('vin', value);
-        if(id == value.id){
-            if(value.qt > 1){
-                vins[index].qt--;
-                $('#vin_'+id+' td.quantite').html(vins[index].qt);
-            } else {
-                $('#vin_'+id).remove();
-                vins.splice(index, 1);
-                if(vins.length == 0){
-                    $( "table#vin-selection" ).append( '<tr id="vinSelectionEmpty"><td><p>Aucun vin sélectionné</p></td></tr>');
-                    $('#btnCommander').attr('disabled', true);
+        if(typeof value !== 'undefined'){
+            if(id == value.id){
+                if(value.qt > 1){
+                    vins[index].qt--;
+                    $('#vin_'+id+' td.quantite').html(vins[index].qt);
+                } else {
+                    $('#vin_'+id).remove();
+                    vins.splice(index, 1);
+                    if(vins.length == 0){
+                        $( "table#vin-selection" ).append( '<tr id="vinSelectionEmpty"><td><p>Aucun vin sélectionné</p></td></tr>');
+                        $('#btnCommander').attr('disabled', true);
+                    }
                 }
             }
         }

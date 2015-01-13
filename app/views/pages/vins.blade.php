@@ -21,7 +21,7 @@
             <div id="categories" class="col-xs-12 text-center">
                 @foreach ($vinsCategories as $categorie => $vins)
                     @if(sizeof($vins) != 0)
-                        <a class="block-categorie" href="#{{ $categorie }}">{{ $categorie }}</a>
+                        <a class="block-categorie scrollTo" href="#{{ str_replace(' ', '', $categorie) }}">{{ $categorie }}</a>
                     @endif
                 @endforeach
             </div>
@@ -31,8 +31,7 @@
     <div class="container">
         @foreach ($vinsCategories as $categorie => $vins)
             @if(sizeof($vins) != 0)
-                <h2 class="title" id="{{ $categorie }}">{{ $categorie }}</h2>
-
+                <h2 class="title" id="{{ str_replace(' ', '', $categorie) }}">{{ $categorie }}</h2>
                 @foreach ($vins as $key => $vin)
                     @if ($key % 2 == 0)
                         @if($key != 0)
