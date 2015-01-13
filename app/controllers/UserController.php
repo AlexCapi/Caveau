@@ -49,18 +49,23 @@ class UserController extends Controller
         return Redirect::back()->with("status", Lang::get($response));
     }
 
+    public function showReset($token)
+    {
+        return View::make('user/reset')->with('token', $token);
+    }
+
     public function reset($token)
     {
         $credentials = Input::only(
                 "email",
                 "password",
-                "password_confirmation"
+                "password_confirmation" 
             ) + compact("token");
 
         $response = $this->resetPassword($credentials);
 
         if ($response === Password::PASSWORD_RESET) {
-            return Redirect::to("/admin");
+            return Redirect::to("/admin")->with(array('success'=> 'Mot de passe mis à jour avec succès.'));
         }
 
         return Redirect::back()->withInput()->with("error", Lang::get($response));

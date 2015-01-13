@@ -32,4 +32,5 @@ Route::get( 'user/logout',   array('as' => 'user/logout', 'uses'=>'UserControlle
 //Recuperation du mot de passe
 Route::get(" request", "UserController@showRequest");
 Route::post("request", "UserController@request");
-Route::post("reset/{token}", "UserController@reset");
+Route::get('password/reset/{token}','UserController@showReset');
+Route::post('password/reset/{token}','UserController@reset');
