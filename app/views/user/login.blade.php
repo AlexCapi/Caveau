@@ -16,6 +16,9 @@
                 @if ($errors->first("password"))
                 <div class="alert alert-danger">{{ $errors->first("password") }}</div>
                 @endif
+                @if (!empty(Session::get('success')))
+                <div class="alert alert-success">{{ Session::get('success') }}</div>
+                @endif
 
                 {{ Form::open() }}
                 <div class="row">

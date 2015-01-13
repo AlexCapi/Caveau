@@ -65,7 +65,7 @@ class UserController extends Controller
         $response = $this->resetPassword($credentials);
 
         if ($response === Password::PASSWORD_RESET) {
-            return Redirect::to("/admin")->with(array('success'=> 'Mot de passe mis à jour avec succès.'));
+            return Redirect::to("user/login")->with(array('success'=> 'Mot de passe mis à jour avec succès.'));
         }
 
         return Redirect::back()->withInput()->with("error", Lang::get($response));
