@@ -15,13 +15,13 @@
 
     <div class="carousel-inner" role="listbox">
         <div class="item active">
-            <img src="{{ URL::asset('images/header.png') }}" class="img-responsive brightness" data-holder-rendered="true">
+            <div class="carousel-image-container brightness" style="background: url('{{ URL::asset('images/header.png') }}') no-repeat center fixed; -webkit-background-size: cover; background-size: cover;"></div>
             <div class="carousel-caption">
                 Caveau Quinard, Viticulteur Récoltant
             </div>
         </div>
         <div class="item">
-            <img src="{{ URL::asset('images/caveau.png') }}" class="img-responsive brightness" data-holder-rendered="true">
+            <div class="carousel-image-container brightness" style="background: url('{{ URL::asset('images/caveau.png') }}') no-repeat center fixed; -webkit-background-size: cover; background-size: cover;"></div>
             <div class="carousel-caption">
                 Notre caveau
             </div>
@@ -61,20 +61,20 @@
         @endif
 
         <!-- Three columns of text below the carousel -->
-        <div class="row">
-            <div class="col-lg-4">
+        <div class="row text-center">
+            <div class="col-md-4">
                 <span class="glyphicon glyphicon-glass icones-lg dark-purple" aria-hidden="true"></span>
                 <h2 class="dark-purple">Des vins de qualités</h2>
                 <p>Venez découvrir nos vins de qualités, qui ont façonné la réputation de notre caveau depuis des années et dont les différents crus seront vous surprendre par leur goût exceptionnel.</p>
                 <p><a class="btn btn-default" href="{{ URL::to('vins') }}" role="button">Voir nos vins »</a></p>
             </div><!-- /.col-lg-4 -->
-            <div class="col-lg-4">
+            <div class="col-md-4">
                 <span class="glyphicon glyphicon-shopping-cart icones-lg dark-purple" aria-hidden="true"></span>
                 <h2 class="dark-purple">Commander en ligne</h2>
                 <p>Avec notre nouveau site web, commander votre vin depuis chez vous. Nous préparons votre commande et l'expédions dans les plus brefs délais, ou vous pouvez simplement passer la récupérer.</p>
                 <p><a class="btn btn-default" href="{{ URL::to('commander') }}" role="button">Commander »</a></p>
             </div><!-- /.col-lg-4 -->
-            <div class="col-lg-4">
+            <div class="col-md-4">
                 <span class="glyphicon glyphicon-gift icones-lg dark-purple" aria-hidden="true"></span>
                 <h2 class="dark-purple">De bonnes idées cadeaux</h2>
                 <p>Le caveau Quinard vous propose des coffrets cadeaux, composés de nos meilleures bouteilles ainsi que de produits du terroir. Idéal pour offrir ! </p>
