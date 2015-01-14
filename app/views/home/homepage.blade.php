@@ -3,15 +3,14 @@
 
 <!-- Bandeau
 ================================================== -->
-<div class="bandeau" style="background: url({{ URL::asset('images/header.png') }}) no-repeat; background-size: cover;"></div>
-
-<!-- CAROUSEL
+<!-- <div class="bandeau" style="background: url({{ URL::asset('images/header.png') }}) no-repeat; background-size: cover;"></div> -->
 
 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 
     <ol class="carousel-indicators">
         <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
         <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
     </ol>
 
 
@@ -45,7 +44,7 @@
         <span class="sr-only">Suivant</span>
     </a>
 </div>
--->
+
 
 <!-- Marketing messaging and featurettes
 ================================================== -->

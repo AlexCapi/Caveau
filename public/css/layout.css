@@ -111,7 +111,7 @@ section.grey{
 
 section .section-title{
     text-align: center;
-    width: 900px;
+    max-width: 900px;
     margin: 0 auto 100px auto;
 }
 
@@ -263,6 +263,44 @@ section p.section-description{
 
     .featurette-heading {
         font-size: 50px;
+    }
+}
+
+@media (max-width: 991px) {
+    .navbar-wrapper .navbar-collapse.collapse.in { 
+        display: block!important; margin-top: 0px; 
+    }
+    
+    .navbar-wrapper .navbar-header {
+        float: none;
+    }
+    .navbar-wrapper .navbar-toggle {
+        display: block;
+    }
+    .navbar-wrapper .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-wrapper .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-wrapper .navbar-nav {
+        float: none!important;
+        margin: 7.5px -15px;
+    }
+    .navbar-wrapper .navbar-nav>li {
+        float: none;
+    }
+    .navbar-wrapper .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    /* since 3.1.0 */
+    .navbar-wrapper .navbar-collapse.collapse.in { 
+        display: block!important;
+    }
+    .navbar-wrapper .collapsing {
+        overflow: hidden!important;
     }
 }
 
