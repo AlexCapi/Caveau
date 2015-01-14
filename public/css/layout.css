@@ -502,6 +502,10 @@ table.tab-vin-selection td:nth-child(1), table.tab-vin-selection td:nth-child(4)
     cursor: pointer;
 }
 
+.explications{
+    padding: 20px;
+}
+
 #recapitulatif .link-back-command{
     cursor: pointer;
     color: #ac2925;

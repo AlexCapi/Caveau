@@ -125,16 +125,6 @@
                     </div>
                     {{ Form::close() }}
                 </div>
-                <div class="row">
-                    <div class="col-sm-12">
-                        <p class="text-center">L'envoi de ce formulaire constitue une pré-commande. nous vous recontacterons ensuite dans les plus brefs délais afin de finaliser votre commande, majorée des frais d'expédition.<br/>
-                            La commande sera expédié après réception d'un chèque.<br/>
-                            Découvrez nos frais de transports ici : <a href="{{ URL::asset('documents/frais_transport.pdf') }}" target="_blank"> tarifs</a><br/>
-                            Possibilitée de retrait de la commande sur place.<br/>
-                            Pour tout renseignement veuillez nous appelez au 04 79 42 10 18
-                        </p>
-                    </div>
-                </div>
             </div>
             <div class="col-sm-4">
                 <div class="selection">
@@ -156,6 +146,15 @@
                             </div>
                         </div>
                     </div>
+                </div>
+                <div class="selection">
+                    <h5 class="title-selection">Explications</h5>
+                    <p class="text-left explications">L'envoi de ce formulaire constitue une pré-commande. nous vous recontacterons ensuite dans les plus brefs délais afin de finaliser votre commande, majorée des frais d'expédition.<br/>
+                        La commande sera expédié après réception d'un chèque.<br/>
+                        Découvrez nos frais de transports ici : <a href="{{ URL::asset('documents/frais_transport.pdf') }}" target="_blank"> tarifs</a><br/>
+                        Possibilitée de retrait de la commande sur place.<br/>
+                        Pour tout renseignement veuillez nous appelez au 04 79 42 10 18
+                    </p>
                 </div>
                 <div class="link-back-command" onclick="backToCommand()"><span class="glyphicon glyphicon-circle-arrow-left"></span> Retour à la commande</div>
             </div>
