@@ -46,7 +46,7 @@ class CommanderController extends Controller {
                     'total' => $total,
                     'vins' => $vins,
                 );
-                Mail::send('emails.contact.contact', $fields, function($message)
+                Mail::send('emails.order.commande', $fields, function($message)
                 {
                     $message->to(Config::get('emails.email_to'), Config::get('emails.name_to'))->subject('Commande de vins');
                 });
