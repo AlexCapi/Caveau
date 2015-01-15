@@ -92,18 +92,7 @@
     </head>
 	 <body bgcolor="#e4e4e4" topmargin="0" leftmargin="0" marginheight="0" marginwidth="0" style="-webkit-font-smoothing: antialiased;width:100% !important;background:#e4e4e4;-webkit-text-size-adjust:none;">
 
-        <table width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#e4e4e4">
-            <tr>
-                <td bgcolor="#e4e4e4" width="100%">
-
-                    
-                                                                <p>{{ $nom }}</p>
-                                                                <p>{{ $email }}</p>
+      <a href="http://www.facebook.com/pages/Caveau-Quinard/262742030464209"><img border="0" src="{{ $message->embed(URL::asset('images/email/facebook.gif')) }}" width="32" height="32" alt="Rendez-nous visite sur Facebook"></a></td>
                                                             
-
-                </td>
-            </tr>
-        </table>
-
 	</body>
 </html>
