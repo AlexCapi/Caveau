@@ -100,7 +100,7 @@
                         <tr>
                             <td width="600" class="cell">
 
-                                <img border="0" src="{{ $message->embed(URL::asset('images/email/header.jpg')) }}" label="Bandeau image" editable="true" width="600" height="253" id="screenshot">
+                                <img border="0" src="{{ $message->embed('images/email/header.jpg') }}" label="Bandeau image" editable="true" width="600" height="253" id="screenshot">
 
                                 <table width="600" cellpadding="25" cellspacing="0" border="0" class="promotable">
                                     <tr>
@@ -112,12 +112,12 @@
                                     </tr>
                                 </table>
 
-                                <img border="0" src="{{ $message->embed(URL::asset('images/email/spacer.gif')) }}" width="1" height="15" class="divider"><br>
+                                <img border="0" src="{{ $message->embed('images/email/spacer.gif') }}" width="1" height="15" class="divider"><br>
 
                                 <layout label="New feature">
                                     <table width="100%" cellpadding="0" cellspacing="0" border="0">
                                         <tr>
-                                            <td bgcolor="#85bdad" nowrap><img border="0" src="{{ $message->embed(URL::asset('images/email/spacer.gif')) }}" width="5" height="1"></td>
+                                            <td bgcolor="#85bdad" nowrap><img border="0" src="{{ $message->embed('images/email/spacer.gif') }}" width="5" height="1"></td>
                                             <td width="100%" bgcolor="#ffffff">
 
                                                 <table width="100%" cellpadding="20" cellspacing="0" border="0">
@@ -138,12 +138,12 @@
                                             </td>
                                         </tr>
                                     </table>
-                                    <img border="0" src="{{ $message->embed(URL::asset('images/email/spacer.gif')) }}" width="1" height="15" class="divider"><br>
+                                    <img border="0" src="{{ $message->embed('images/email/spacer.gif') }}" width="1" height="15" class="divider"><br>
                                 </layout>
                                 <layout label="Article, tip or resource">
                                     <table width="100%" cellpadding="0" cellspacing="0" border="0">
                                         <tr>
-                                            <td bgcolor="#ef3101" nowrap><img border="0" src="{{ $message->embed(URL::asset('images/email/spacer.gif')) }}" width="5" height="1"></td>
+                                            <td bgcolor="#ef3101" nowrap><img border="0" src="{{ $message->embed('images/email/spacer.gif') }}" width="5" height="1"></td>
                                             <td width="100%" bgcolor="#ffffff">
 
                                                 <table width="100%" cellpadding="20" cellspacing="0" border="0">
@@ -165,13 +165,13 @@
                                             </td>
                                         </tr>
                                     </table>
-                                    <img border="0" src="{{ $message->embed(URL::asset('images/email/spacer.gif')) }}" width="1" height="15" class="divider"><br>
+                                    <img border="0" src="{{ $message->embed('images/email/spacer.gif') }}" width="1" height="15" class="divider"><br>
                                 </layout>
                                 @if (!empty($text))
                                 <layout label="Gallery highlights">
                                     <table width="100%" cellpadding="0" cellspacing="0" border="0">
                                         <tr>
-                                            <td bgcolor="#832701" nowrap><img border="0" src="{{ $message->embed(URL::asset('images/email/spacer.gif')) }}" width="5" height="1"></td>
+                                            <td bgcolor="#832701" nowrap><img border="0" src="{{ $message->embed('images/email/spacer.gif') }}" width="5" height="1"></td>
                                             <td width="100%" bgcolor="#ffffff">
 
                                                 <table width="100%" cellpadding="20" cellspacing="0" border="0">
@@ -188,7 +188,7 @@
                                             </td>
                                         </tr>
                                     </table>
-                                    <img border="0" src="{{ $message->embed(URL::asset('images/email/spacer.gif')) }}" width="1" height="15" class="divider"><br>
+                                    <img border="0" src="{{ $message->embed('images/email/spacer.gif') }}" width="1" height="15" class="divider"><br>
                                 </layout>
                                 @endif
 
@@ -196,13 +196,13 @@
                         </tr>
                     </table>
 
-                    <img border="0" src="{{ $message->embed(URL::asset('images/email/spacer.gif')) }}" width="1" height="25" class="divider"><br>
+                    <img border="0" src="{{ $message->embed('images/email/spacer.gif') }}" width="1" height="25" class="divider"><br>
 
                     <table width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#f2f2f2">
                         <tr>
                             <td>
 
-                                <img border="0" src="{{ $message->embed(URL::asset('images/email/spacer.gif')) }}" width="1" height="30"><br>
+                                <img border="0" src="{{ $message->embed('images/email/spacer.gif') }}" width="1" height="30"><br>
 
                                 <table width="600" cellpadding="0" cellspacing="0" border="0" align="center" class="table">
                                     <tr>
@@ -212,7 +212,7 @@
                                                 <tr>
                                                     <td width="380" valign="top" class="footershow">
 
-                                                        <img border="0" src="{{ $message->embed(URL::asset('images/email/spacer.gif')) }}" width="1" height="8"><br>
+                                                        <img border="0" src="{{ $message->embed('images/email/spacer.gif') }}" width="1" height="8"><br>
 
                                                         <p style="color:#a6a6a6;font-size:12px;font-family:Helvetica,Arial,sans-serif;margin-top:0;margin-bottom:15px;padding-top:0;padding-bottom:0;line-height:18px;" class="reminder">Vous recevez cet email car vous avez été contacté par un client dans le but de passé une commande par le biais de votre site internet.</p>
                                                         <p style="color:#c9c9c9;font-size:12px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;"><preferences style="color:#3ca7dd;text-decoration:none;"><strong><a href="http://www.caveauquinard.fr/" style="color:#a6a6a6;text-decoration:underline;">caveauquinard.fr</a></strong></preferences></p>
@@ -222,11 +222,11 @@
 
                                                         <table cellpadding="0" cellspacing="0" border="0">
                                                             <tr>
-                                                                <td><a href="http://www.facebook.com/pages/Caveau-Quinard/262742030464209"><img border="0" src="{{ $message->embed(URL::asset('images/email/facebook.gif')) }}" width="32" height="32" alt="Rendez-nous visite sur Facebook"></a></td>
+                                                                <td><a href="http://www.facebook.com/pages/Caveau-Quinard/262742030464209"><img border="0" src="{{ $message->embed('images/email/facebook.gif') }}" width="32" height="32" alt="Rendez-nous visite sur Facebook"></a></td>
                                                             </tr>
                                                         </table>
 
-                                                        <img border="0" src="{{ $message->embed(URL::asset('images/email/spacer.gif')) }}" width="1" height="10"><br><p style="color:#b3b3b3;font-size:11px;line-height:15px;font-family:Helvetica,Arial,sans-serif;margin-top:0;margin-bottom:0;padding-top:0;padding-bottom:0;font-weight:bold;">Caveau Quinard</p><p style="color:#b3b3b3;font-size:11px;line-height:15px;font-family:Helvetica,Arial,sans-serif;margin-top:0;margin-bottom:0;padding-top:0;padding-bottom:0;font-weight:normal;">201 route du Lit au roi, 01300 Massignieu de Rives</p></td>
+                                                        <img border="0" src="{{ $message->embed('images/email/spacer.gif') }}" width="1" height="10"><br><p style="color:#b3b3b3;font-size:11px;line-height:15px;font-family:Helvetica,Arial,sans-serif;margin-top:0;margin-bottom:0;padding-top:0;padding-bottom:0;font-weight:bold;">Caveau Quinard</p><p style="color:#b3b3b3;font-size:11px;line-height:15px;font-family:Helvetica,Arial,sans-serif;margin-top:0;margin-bottom:0;padding-top:0;padding-bottom:0;font-weight:normal;">201 route du Lit au roi, 01300 Massignieu de Rives</p></td>
                                                 </tr>
                                             </table>
 
@@ -234,7 +234,7 @@
                                     </tr>
                                 </table>
 
-                                <img border="0" src="{{ $message->embed(URL::asset('images/email/spacer.gif')) }}" width="1" height="25"><br>
+                                <img border="0" src="{{ $message->embed('images/email/spacer.gif') }}" width="1" height="25"><br>
 
                             </td>
                         </tr>
