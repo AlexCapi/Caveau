@@ -161,6 +161,7 @@
         </div>
     </div>
 </section>
+
 @if($commandeEnCours)
     <script type="application/javascript">
         window.onload = function(){
@@ -168,4 +169,11 @@
         };
     </script>
 @endif
+
+@stop
+
+@section("scripts")
+
 {{HTML::script('js/commande.js')}}
+
+@stop
