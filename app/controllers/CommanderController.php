@@ -47,7 +47,7 @@ class CommanderController extends Controller {
                     'vins' => $vins,
                 );
                 Session::forget('vins');
-                return Redirect::back()->with(array('success'=> 'Votre commande a bien été prise en compte.', 'commandeEnCours' => false));
+                return Redirect::back()->with(array('success'=> serialize($fields), 'commandeEnCours' => false));
                 Mail::send('emails.order.commande', $fields, function($message)
                 {
                     $message->to(Config::get('emails.email_to'), Config::get('emails.name_to'))->subject('Commande de vins');
