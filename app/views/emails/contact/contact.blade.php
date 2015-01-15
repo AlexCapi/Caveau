@@ -92,7 +92,7 @@
     </head>
 	 <body bgcolor="#e4e4e4" topmargin="0" leftmargin="0" marginheight="0" marginwidth="0" style="-webkit-font-smoothing: antialiased;width:100% !important;background:#e4e4e4;-webkit-text-size-adjust:none;">
 
-      <a href="http://www.facebook.com/pages/Caveau-Quinard/262742030464209"><img border="0" src="{{ $message->embed(URL::asset('images/email/facebook.gif')) }}" width="32" height="32" alt="Rendez-nous visite sur Facebook"></a></td>
+      <a href="http://www.facebook.com/pages/Caveau-Quinard/262742030464209"><img border="0" src="<?php echo $message->embed(URL::asset('images/email/facebook.gif')) ?>" width="32" height="32" alt="Rendez-nous visite sur Facebook"></a></td>
                                                             
 	</body>
 </html>
