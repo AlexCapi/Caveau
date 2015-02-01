@@ -97,4 +97,10 @@
         </div>
     </div>
 </section>
+@stop
+
+@section("scripts")
+
 {{HTML::script('js/general.js')}}
+
+@stop

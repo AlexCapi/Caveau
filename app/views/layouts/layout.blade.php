@@ -36,8 +36,12 @@
 
         @include("layouts.footer")
     </body>
+
     {{HTML::script('bower/jquery/dist/jquery.min.js')}}
     {{HTML::script('bower/bootstrap/dist/js/bootstrap.min.js')}}
     {{HTML::script('js/navbar.js')}}
     {{HTML::script('bower/lightgallery/light-gallery/js/lightGallery.min.js')}}
+
+    @yield('scripts')
+
 </html>
