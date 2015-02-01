@@ -15,13 +15,13 @@
 
     <div class="carousel-inner" role="listbox">
         <div class="item active">
-            <div class="carousel-image-container brightness" style="background: url('{{ URL::asset('images/header.png') }}') no-repeat center; -webkit-background-size: cover; background-size: cover;"></div>
+            <img class="img-responsive brightness" src="{{ URL::asset('images/header.png') }}" style="height: 100%; width: 100%">
             <div class="carousel-caption">
                 Caveau Quinard, Viticulteur Récoltant
             </div>
         </div>
         <div class="item">
-            <div class="carousel-image-container brightness" style="background: url('{{ URL::asset('images/caveau.png') }}') no-repeat center; -webkit-background-size: cover; background-size: cover;"></div>
+            <img class="img-responsive brightness" src="{{ URL::asset('images/caveau.png') }}" style="height: 100%; width: 100%">
             <div class="carousel-caption">
                 Notre caveau
             </div>
