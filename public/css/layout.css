@@ -7,6 +7,19 @@ body {
     color: #5a5a5a;
 }
 
+.obsolete{
+    background-color: #F60;
+    color: #ffffff;
+    text-align: center;
+    padding: 2px;
+    z-index: 600;
+    position: relative;
+}
+.obsolete a{
+    color: inherit;
+    border-bottom: 1px dotted #ffffff;
+}
+
 .clear-purple{
     color: #D00010;
 }

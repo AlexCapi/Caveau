@@ -25,8 +25,8 @@
             fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));
     </script>
-    <!--[if lt IE 9]>
-    <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+    <!--[if lte IE 9]>
+        <p class="obsolete">Votre navigateur est <strong>obsolète</strong>, la sécurité et la navigabilité ne sont plus garanties. Nous vous recommandons de <a href="http://browsehappy.com/">mettre à jour au plus vite en cliquant ici </a>.</p>
     <![endif]-->
 
         @include("layouts.header")
