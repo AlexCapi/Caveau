@@ -15,14 +15,14 @@
 Route::get( '/', array('as' => '/', 'uses' => 'HomeController@showHome'));
 
 //Pages
-Route::get(  'vins', 'VinController@index');
-Route::get(  'contact', 'ContactController@index');
-Route::post( 'contact', 'ContactController@sendForm');
-Route::get(  'caveau', 'CaveauController@index');
-Route::get(  'diaporama', 'DiaporamaController@index');
-Route::get(  'commander', 'CommanderController@index');
-Route::post( 'commander', 'CommanderController@commander');
-Route::get(  'actualites', 'ActualiteController@index');
+Route::get(  'vins',        'VinController@index');
+Route::get(  'contact',     'ContactController@index');
+Route::post( 'contact',     'ContactController@sendForm');
+Route::get(  'caveau',      'CaveauController@index');
+Route::get(  'diaporama',   'DiaporamaController@index');
+Route::get(  'commander',   'CommanderController@index');
+Route::post( 'commander',   'CommanderController@commander');
+Route::get(  'actualites',  'ActualiteController@index');
 
 //Authentication
 Route::get( 'user/login',    array('as' => 'user/login', 'uses' =>'UserController@login'));
@@ -30,7 +30,10 @@ Route::post('user/login',    array('as' => 'user/connect', 'uses'=>'UserControll
 Route::get( 'user/logout',   array('as' => 'user/logout', 'uses'=>'UserController@logout'));
 
 //Recuperation du mot de passe
-Route::get(" request", "UserController@showRequest");
-Route::post("request", "UserController@request");
-Route::get('password/reset/{token}','UserController@showReset');
-Route::post('password/reset/{token}','UserController@reset');
+Route::get( 'request',                  'UserController@showRequest');
+Route::post('request',                  'UserController@request');
+Route::get( 'password/reset/{token}',   'UserController@showReset');
+Route::post('password/reset/{token}',   'UserController@reset');
+
+//Redirections
+

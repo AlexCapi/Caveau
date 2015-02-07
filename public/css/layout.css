@@ -192,7 +192,10 @@ section p.section-description{
     background-size: cover;
 }
 
-
+.navbar-static-top {
+    z-index: 1000;
+    border-width: 0 0 0px;
+}
 /* MARKETING CONTENT
 -------------------------------------------------- */
 
@@ -245,6 +248,10 @@ section p.section-description{
     .navbar-wrapper .navbar {
         padding-right: 0;
         padding-left: 0;
+    }
+    .navbar-wrapper .navbar-static-top {
+        z-index: 1000;
+        border-width: 0 0 0;
     }
 
     /* The navbar becomes detached from the top, so we round the corners */
