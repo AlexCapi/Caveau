@@ -2,6 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge" />
         <title>Caveau Quinard</title>
         <link href="{{ URL::asset('css/layout.css') }}" rel="stylesheet">
         <link href="{{ URL::asset('bower/bootstrap/dist/css/bootstrap.min.css') }}" rel="stylesheet">
