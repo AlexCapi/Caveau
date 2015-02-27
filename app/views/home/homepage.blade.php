@@ -3,7 +3,7 @@
 
 <!-- Bandeau
 ================================================== -->
-<div class="bandeau brightness" style="background: url({{ URL::asset('images/header.png') }}) no-repeat; background-size: cover;"></div>
+<div class="bandeau brightness" style="background: url({{ URL::asset('images/header.jpg') }}) no-repeat center center; background-size: cover;"></div>
 <!--
 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 
