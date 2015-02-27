@@ -54,10 +54,10 @@ return array(
 
 		'mysql' => array(
 			'driver'    => 'mysql',
-			'host'      => 'localhost',
-			'database'  => 'caveau',
-			'username'  => 'root',
-			'password'  => 'root',
+			'host'      => 'caveauquyt_old.mysql.db',
+			'database'  => 'caveauquyt_old',
+			'username'  => 'caveauquyt_old',
+			'password'  => 'j46FEpBK7UxQ',
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',

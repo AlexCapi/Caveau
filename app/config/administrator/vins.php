@@ -31,7 +31,7 @@ return array(
         ),
         'image' => array(
             'title' => 'Image',
-            'output' => '<img src="/caveau/public/images/uploads/originals/(:value)" height="100" />',
+            'output' => '<img src="/images/uploads/originals/(:value)" height="100" />',
             'sortable' => false,
         )
     ),

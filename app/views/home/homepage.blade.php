@@ -3,8 +3,8 @@
 
 <!-- Bandeau
 ================================================== -->
-<!-- <div class="bandeau" style="background: url({{ URL::asset('images/header.png') }}) no-repeat; background-size: cover;"></div> -->
-
+<div class="bandeau brightness" style="background: url({{ URL::asset('images/header.png') }}) no-repeat; background-size: cover;"></div>
+<!--
 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 
     <ol class="carousel-indicators">
@@ -37,7 +37,7 @@
         <span class="sr-only">Suivant</span>
     </a>
 </div>
-
+-->
 
 <!-- Marketing messaging and featurettes
 ================================================== -->
