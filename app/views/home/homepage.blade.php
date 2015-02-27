@@ -71,13 +71,13 @@
                 <p><a class="btn btn-default" href="{{ URL::to('vins') }}" role="button">Voir nos vins »</a></p>
             </div><!-- /.col-lg-4 -->
             <div class="col-md-4">
-                <span class="glyphicon glyphicon-shopping-cart icones-lg dark-purple" aria-hidden="true"></span>
+                <span class="icon-cart icones-lg dark-purple" aria-hidden="true"></span>
                 <h2 class="dark-purple">Commander en ligne</h2>
                 <p>Avec notre nouveau site web, commander votre vin depuis chez vous. Nous préparons votre commande et l'expédions dans les plus brefs délais, ou vous pouvez simplement passer la récupérer.</p>
                 <p><a class="btn btn-default" href="{{ URL::to('commander') }}" role="button">Commander »</a></p>
             </div><!-- /.col-lg-4 -->
             <div class="col-md-4">
-                <span class="glyphicon glyphicon-gift icones-lg dark-purple" aria-hidden="true"></span>
+                <span class="icon-gift icones-lg dark-purple" aria-hidden="true"></span>
                 <h2 class="dark-purple">De bonnes idées cadeaux</h2>
                 <p>Le caveau Quinard vous propose des coffrets cadeaux, composés de nos meilleures bouteilles ainsi que de produits du terroir. Idéal pour offrir ! </p>
                 <p><a class="btn btn-default" href="{{ URL::to('caveau') }}#cadeaux" role="button">Voir nos coffrets »</a></p>
