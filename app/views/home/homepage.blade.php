@@ -47,17 +47,19 @@
     <div id="home">
 
         @if (!empty($actus))
-        @foreach ($actus as $actu)
-        <div class="alert alert-danger alert-home" >
-            <p class="titre">
-                {{ $actu->titre }}
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </p>
-            <p class="text"> {{ $actu->message }}</p>
+        <div class="home-actus">
+            <h2 class="home-actus-titre">Notre actualite</h2>
+            @foreach ($actus as $index => $actu)
+            @if ($index%2 == 0)
+            <blockquote>
+            @else
+            <blockquote class="blockquote-reverse">
+            @endif
+            <p>{{ $actu->message }}</p>
+            <footer>{{ $actu->titre }}</footer>
+            </blockquote>
+            @endforeach
         </div>
-        @endforeach
         @endif
 
         <!-- Three columns of text below the carousel -->

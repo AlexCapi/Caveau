@@ -50,12 +50,31 @@ a:focus{
     margin-top: 0;
 }
 
-.alert-home{
-    margin-bottom: 60px;
+.home-actus{
+    margin-bottom: 70px;
+    max-width: 700px;
+    background-color: #eee;
+    padding: 20px;
+    margin: 0 auto 80px auto;
 }
 
-.alert-home .titre{
-    font-weight: 600;
+.home-actus blockquote{
+    border-left: 5px solid #ac2925;
+}
+
+.home-actus blockquote.blockquote-reverse{
+    border-left: none;
+    border-right: 5px solid #ac2925;
+}
+
+.home-actus blockquote footer{
+    color: #ac2925;
+}
+
+.home-actus-titre{
+    text-align: center;
+    margin-bottom: 40px;
+    color: #ac2925;
 }
 
 img.img-preview{
