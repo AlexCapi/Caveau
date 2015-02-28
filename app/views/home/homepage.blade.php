@@ -3,8 +3,8 @@
 
 <!-- Bandeau
 ================================================== -->
-<!-- <div class="bandeau" style="background: url({{ URL::asset('images/header.png') }}) no-repeat; background-size: cover;"></div> -->
-
+<div class="bandeau brightness" style="background: url({{ URL::asset('images/header.jpg') }}) no-repeat center center; background-size: cover;"></div>
+<!--
 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 
     <ol class="carousel-indicators">
@@ -37,7 +37,7 @@
         <span class="sr-only">Suivant</span>
     </a>
 </div>
-
+-->
 
 <!-- Marketing messaging and featurettes
 ================================================== -->
@@ -47,17 +47,19 @@
     <div id="home">
 
         @if (!empty($actus))
-        @foreach ($actus as $actu)
-        <div class="alert alert-danger alert-home" >
-            <p class="titre">
-                {{ $actu->titre }}
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </p>
-            <p class="text"> {{ $actu->message }}</p>
+        <div class="home-actus">
+            <h2 class="home-actus-titre">Notre actualite</h2>
+            @foreach ($actus as $index => $actu)
+            @if ($index%2 == 0)
+            <blockquote>
+            @else
+            <blockquote class="blockquote-reverse">
+            @endif
+            <p>{{ $actu->message }}</p>
+            <footer>{{ $actu->titre }}</footer>
+            </blockquote>
+            @endforeach
         </div>
-        @endforeach
         @endif
 
         <!-- Three columns of text below the carousel -->
@@ -69,13 +71,13 @@
                 <p><a class="btn btn-default" href="{{ URL::to('vins') }}" role="button">Voir nos vins »</a></p>
             </div><!-- /.col-lg-4 -->
             <div class="col-md-4">
-                <span class="glyphicon glyphicon-shopping-cart icones-lg dark-purple" aria-hidden="true"></span>
+                <span class="icon-cart icones-lg dark-purple" aria-hidden="true"></span>
                 <h2 class="dark-purple">Commander en ligne</h2>
                 <p>Avec notre nouveau site web, commander votre vin depuis chez vous. Nous préparons votre commande et l'expédions dans les plus brefs délais, ou vous pouvez simplement passer la récupérer.</p>
                 <p><a class="btn btn-default" href="{{ URL::to('commander') }}" role="button">Commander »</a></p>
             </div><!-- /.col-lg-4 -->
             <div class="col-md-4">
-                <span class="glyphicon glyphicon-gift icones-lg dark-purple" aria-hidden="true"></span>
+                <span class="icon-gift icones-lg dark-purple" aria-hidden="true"></span>
                 <h2 class="dark-purple">De bonnes idées cadeaux</h2>
                 <p>Le caveau Quinard vous propose des coffrets cadeaux, composés de nos meilleures bouteilles ainsi que de produits du terroir. Idéal pour offrir ! </p>
                 <p><a class="btn btn-default" href="{{ URL::to('caveau') }}#cadeaux" role="button">Voir nos coffrets »</a></p>

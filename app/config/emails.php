@@ -1,6 +1,6 @@
 <?php
 
 return array(
-    'email_to' => 'alexandre.capellaro@gmail.com',
-    'name_to' => 'Alexandre CAPELLARO'
+    'email_to' => 'caveauquinard@orange.fr',
+    'name_to' => 'Caveau Quinard'
 );
