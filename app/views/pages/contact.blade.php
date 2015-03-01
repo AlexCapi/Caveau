@@ -69,10 +69,10 @@
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <div class="col-xs-9">
+                                        <div class="col-sm-9">
                                             {{ Form::captcha() }}
                                         </div>
-                                        <div class="col-xs-3 text-right">
+                                        <div class="col-sm-3 text-right">
                                             {{ Form::submit("Envoyer", array('class' => 'btn btn-purple', 'style' => 'margin-top:20px;')) }}
                                         </div>
                                     </div>
