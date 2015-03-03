@@ -15,28 +15,30 @@
         <div class="row">
             <div class="col-sm-8 col-sm-offset-2">
                 <div class="recompenses">
-                    <table class="table table-striped">
-                        <thead>
-                            <tr>
-                                <th>Catégorie</th>
-                                <th>Vin</th>
-                                <th>Millésime</th>
-                                <th>Année</th>
-                                <th>Sélection</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            @foreach ($recompenses as $rec)
+                    <div class="table-responsive">
+                        <table class="table table-striped">
+                            <thead>
                                 <tr>
-                                    <td>{{ $rec->categorie_libelle }}</td>
-                                    <td>{{ $rec->vin_libelle }} {{ $rec->specificite }}</td>
-                                    <td>{{ $rec->millesime }}</td>
-                                    <td>{{ $rec->annee }}</td>
-                                    <td>{{ $rec->selection }}</td>
+                                    <th>Catégorie</th>
+                                    <th>Vin</th>
+                                    <th>Millésime</th>
+                                    <th>Année</th>
+                                    <th>Sélection</th>
                                 </tr>
-                            @endforeach
-                        </tbody>
-                    </table>
+                            </thead>
+                            <tbody>
+                                @foreach ($recompenses as $rec)
+                                    <tr>
+                                        <td>{{ $rec->categorie_libelle }}</td>
+                                        <td>{{ $rec->vin_libelle }} {{ $rec->specificite }}</td>
+                                        <td>{{ $rec->millesime }}</td>
+                                        <td>{{ $rec->annee }}</td>
+                                        <td>{{ $rec->selection }}</td>
+                                    </tr>
+                                @endforeach
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
         </div>
@@ -54,31 +56,33 @@
 
         <div class="row">
             <div class="col-sm-8 col-sm-offset-2">
-                <table class="table table-striped">
-                    <thead>
-                    <tr>
-                        <th>Titre</th>
-                        <th>Visuel</th>
-                        <th>Actions</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    @foreach ($documents as $doc)
-                    <tr>
-                        <td style="vertical-align: middle">{{ $doc->titre }}</td>
-                        <td>
-                            <img class="img-preview" src="{{ URL::asset('documents/'.$doc->fichier) }}">
-                        </td>
-                        <td style="vertical-align: middle">
-                            <!-- Button trigger modal -->
-                            <button type="button" class="btn btn-purple" onclick="showModal('{{ $doc->titre }}', '{{ URL::asset('.documents/$doc->fichier.') }}', '{{ $doc->fichier }}')">
-                                Voir
-                            </button>
-                        </td>
-                    </tr>
-                    @endforeach
-                    </tbody>
-                </table>
+                <div class="table-responsive">
+                    <table class="table table-striped">
+                        <thead>
+                        <tr>
+                            <th>Titre</th>
+                            <th>Visuel</th>
+                            <th>Actions</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        @foreach ($documents as $doc)
+                        <tr>
+                            <td style="vertical-align: middle">{{ $doc->titre }}</td>
+                            <td>
+                                <img class="img-preview" src="{{ URL::asset('documents/'.$doc->fichier) }}">
+                            </td>
+                            <td style="vertical-align: middle">
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-purple" onclick="showModal('{{ $doc->titre }}', '{{ URL::asset('.documents/$doc->fichier.') }}', '{{ $doc->fichier }}')">
+                                    Voir
+                                </button>
+                            </td>
+                        </tr>
+                        @endforeach
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
     </div>
