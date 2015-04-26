@@ -100,7 +100,6 @@
                 </div><!-- /.col-lg-4 -->
             </div><!-- /.row -->
 
-
             <!-- START THE FEATURETTES -->
 
             <hr class="featurette-divider">
@@ -129,7 +128,7 @@
 
             <hr class="featurette-divider">
 
-            <div class="row featurette last-featurette">
+            <div class="row featurette">
                 <div class="col-md-7">
                     <h2 class="featurette-heading dark-purple">Des vins variés <span class="text-muted">et savoureux.</span></h2>
                     <p class="lead">Nous produisons l'ensemble des vins du Bugey : Blanc, Rouge, méthode traditionnelle et ancestrale en agriculture biologique depuis notre reconversion en 2008.</p>
@@ -139,11 +138,21 @@
                 </div>
             </div>
 
+            <hr class="featurette-divider">
+
+            <div class="row featurette last-featurette">
+                <div class="col-md-5">
+                    <iframe class="featurette-map img-responsive" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.fr/maps?q=caveau+quinard&amp;ie=UTF8&amp;hl=fr&amp;hq=caveau+quinard&amp;hnear=Bonneville,+Haute-Savoie,+Rh%C3%B4ne-Alpes&amp;t=m&amp;ll=46.17983,5.08667&amp;spn=1.673524,3.999023&amp;z=7&amp;iwloc=A&amp;output=embed"></iframe>
+                </div>
+                <div class="col-md-7">
+                    <h2 class="featurette-heading dark-purple">Vous souhaitez <span class="text-muted">nous rendre visite?</span></h2>
+                    <p class="lead">Retrouvez notre caveau sur la commune de Massignieu-de-Rives, et venez découvrir notre caveau au sein de ce petit village bugiste au charme indéniable.</p>
+                </div>
+            </div>
+
             <!-- /END THE FEATURETTES -->
         </div>
         </div>
 
-
 </div><!-- /.container -->
 @stop
-

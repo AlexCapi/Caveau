@@ -20,6 +20,7 @@
                                 201 route du Lit au roi<br>
                                 01300, Massignieu de Rives<br>
                             </address>
+                            <iframe class="featurette-map img-responsive" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.fr/maps?q=caveau+quinard&amp;ie=UTF8&amp;hl=fr&amp;hq=caveau+quinard&amp;hnear=Bonneville,+Haute-Savoie,+Rh%C3%B4ne-Alpes&amp;t=m&amp;ll=46.17983,5.08667&amp;spn=1.673524,3.999023&amp;z=7&amp;iwloc=A&amp;output=embed"></iframe>
                         </div>
                     </div>
                 </div>

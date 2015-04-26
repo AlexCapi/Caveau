@@ -50,7 +50,7 @@ a:focus{
     margin-top: 0;
 }
 
-.home-actus{
+#home .home-actus{
     margin-bottom: 70px;
     max-width: 700px;
     background-color: #eee;
@@ -58,20 +58,20 @@ a:focus{
     margin: 0 auto 80px auto;
 }
 
-.home-actus blockquote{
+#home .home-actus blockquote{
     border-left: 5px solid #ac2925;
 }
 
-.home-actus blockquote.blockquote-reverse{
+#home .home-actus blockquote.blockquote-reverse{
     border-left: none;
     border-right: 5px solid #ac2925;
 }
 
-.home-actus blockquote footer{
+#home .home-actus blockquote footer{
     color: #ac2925;
 }
 
-.home-actus-titre{
+#home .home-actus-titre{
     text-align: center;
     margin-bottom: 40px;
     color: #ac2925;
@@ -296,6 +296,10 @@ section p.section-description{
     margin-bottom: 50px;
 }
 
+.img-responsive.featurette-map{
+    height: 343px;
+    width: 100%;
+}
 
 
 /* RESPONSIVE CSS
