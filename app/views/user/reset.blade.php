@@ -1,4 +1,13 @@
 @extends("layouts.layout")
+
+@section('title')
+    Mot de passe oublié
+@stop
+
+@section('description')
+    Se connecter au Caveau Quinard
+@stop
+
 @section("content")
 <section class="header"></section>
 <section id="reset">

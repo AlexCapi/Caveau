@@ -26,6 +26,7 @@
                             <ul class="dropdown-menu" role="menu">
                                 <li {{{ (Request::is('caveau') ? 'class=active' : '') }}}><a href="{{ URL::to('caveau') }}">A propos</a></li>
                                 <li {{{ (Request::is('diaporama') ? 'class=active' : '') }}}><a href="{{ URL::to('diaporama') }}">Diaporama</a></li>
+                                <li {{{ (Request::is('mentions') ? 'class=active' : '') }}}><a href="{{ URL::to('mentions') }}">Mentions Légales</a></li>
                             </ul>
                         </li>
                         <li {{{ (Request::is('contact') ? 'class=active' : '') }}}><a href="{{ URL::to('contact') }}">Contact</a></li>

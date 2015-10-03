@@ -1,4 +1,13 @@
 @extends("layouts.layout")
+
+@section('title')
+    Contacter Caveau Quinard
+@stop
+
+@section('description')
+    N'hésitez pas contacter le Caveau Quinard pour toute informations sur nos vins ou votre commande.
+@stop
+
 @section("content")
 <section class="header"></section>
 <section id="contact">

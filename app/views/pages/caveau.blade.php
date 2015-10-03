@@ -1,4 +1,13 @@
 @extends("layouts.layout")
+
+@section('title')
+    Notre Caveau Quinard dans le Bugey
+@stop
+
+@section('description')
+    Venez visiter notre caveau bugiste, proposant des produits locaux, artisanaux, et biologiques.
+@stop
+
 @section("content")
 <section class="header"></section>
 <section id="caveau">

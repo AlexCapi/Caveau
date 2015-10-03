@@ -1,4 +1,13 @@
 @extends("layouts.layout")
+
+@section('title')
+    Diaporama Caveau Quinard
+@stop
+
+@section('description')
+    Consultez les plus belles photos du caveau quinard afin de prendre par à notre aventure bugiste.
+@stop
+
 @section("content")
 <section class="header"></section>
 <section id="diaporama">

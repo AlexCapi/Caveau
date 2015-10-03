@@ -1,4 +1,13 @@
 @extends("layouts.layout")
+
+@section('title')
+    Les vins du Caveau Quinard
+@stop
+
+@section('description')
+    Présentation de nos vins de qualtiés et issus de l'agriculture biologique dans le Bugey.
+@stop
+
 @section("content")
 <section class="header"></section>
 <section id="vins">

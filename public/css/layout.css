@@ -423,7 +423,7 @@ a.block-categorie{
     color: #FFFFFF;
     font-size: 17px;
     border: 1px solid #ac2925;
-    margin-right: -3px;
+    margin-right: 0;
 }
 
 a.block-categorie:hover{

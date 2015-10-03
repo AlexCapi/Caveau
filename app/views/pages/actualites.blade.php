@@ -1,4 +1,13 @@
 @extends("layouts.layout")
+
+@section('title')
+    Actualites Caveau Quinard
+@stop
+
+@section('description')
+    Restez au courant des dernières actualités du caveau quinard, viticulteur récoltant.
+@stop
+
 @section("content")
 <section class="header"></section>
 <section id="actualites">

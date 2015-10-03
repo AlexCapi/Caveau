@@ -1,4 +1,13 @@
 @extends("layouts.layout")
+
+@section('title')
+    Accueil Caveau Quinard
+@stop
+
+@section('description')
+    Venez découvrir, commander, offrir, nos vins de qualités du bugey issus de l'agriculture biologique
+@stop
+
 @section("content")
 
 <!-- Bandeau

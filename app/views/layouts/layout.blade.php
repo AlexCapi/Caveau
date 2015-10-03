@@ -4,7 +4,8 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Caveau Quinard</title>
+        <title>@yield('title')</title>
+        <meta name="description" content="@yield('description')">
         <link href="{{ URL::asset('css/layout.css') }}" rel="stylesheet">
         <link href="{{ URL::asset('bower/bootstrap/dist/css/bootstrap.min.css') }}" rel="stylesheet">
         <link href="{{ URL::asset('css/style.css') }}" rel="stylesheet">

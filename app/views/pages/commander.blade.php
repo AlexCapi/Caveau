@@ -1,4 +1,13 @@
 @extends("layouts.layout")
+
+@section('title')
+    Commander chez Caveau Quinard des vins de qualités
+@stop
+
+@section('description')
+    Choisissez parmis les meilleurs vins du bugey, et commander grace à notre nouveau formulaire en ligne.
+@stop
+
 @section("content")
 <section class="header"></section>
 <section id="commander" @if($commandeEnCours) style="display:none;" @endif >
@@ -70,7 +79,7 @@
                     {{ Form::open() }}
                     <div class="row">
                         <div class="col-sm-3">
-                            {{ Form::label("civilite", "Civilite") }}<br/>
+                            {{ Form::label("civilite", "Civilité") }}<br/>
                             M.
                             {{ Form::radio('civilite', 'M') }}
                             Mlle.
