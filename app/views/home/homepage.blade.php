@@ -116,7 +116,7 @@
 
             <hr class="featurette-divider">
 
-            <div class="row featurette last-featurette">
+            <div class="row featurette">
                 <div class="col-md-5">
                     <iframe class="featurette-map img-responsive" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.fr/maps?q=caveau+quinard&amp;ie=UTF8&amp;hl=fr&amp;hq=caveau+quinard&amp;hnear=Bonneville,+Haute-Savoie,+Rh%C3%B4ne-Alpes&amp;t=m&amp;ll=46.17983,5.08667&amp;spn=1.673524,3.999023&amp;z=7&amp;iwloc=A&amp;output=embed"></iframe>
                 </div>
@@ -128,7 +128,7 @@
 
             <hr class="featurette-divider">
 
-            <div class="row featurette">
+            <div class="row featurette last-featurette">
                 <div class="col-md-7">
                     <h2 class="featurette-heading dark-purple">Loisirs & tourisme <span class="text-muted">à proximité.</span></h2>
                     <p class="lead">Entre la véloroute (ou viarhôna), le camping du lit du roi à Massignieu de Rives, la route du Bugey, vous trouverez forcément une activité proche qui vous intéressera.</p>
