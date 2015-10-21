@@ -15,45 +15,12 @@
 <div class="bandeau" style="background: url({{ URL::asset('images/header.jpg') }}) no-repeat center center; background-size: cover;">
     <p class="text-center titre-bandeau">Caveau Quinard</p>
     <p class="text-center soustitre-bandeau">Viticulteur Récoltant</p>
+    <img class="text-center img-bio" src="{{ URL::asset('images/labelbio.jpg') }}">
+    <img class="text-center img-bugey" src="{{ URL::asset('images/bugey.svg') }}">
 </div>
-<!--
-<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-
-    <ol class="carousel-indicators">
-        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-    </ol>
-
-
-    <div class="carousel-inner" role="listbox">
-        <div class="item active">
-            <img class="img-responsive brightness" src="{{ URL::asset('images/header.png') }}" style="height: 100%; width: 100%">
-            <div class="carousel-caption">
-                Caveau Quinard, Viticulteur Récoltant
-            </div>
-        </div>
-        <div class="item">
-            <img class="img-responsive brightness" src="{{ URL::asset('images/caveau.png') }}" style="height: 100%; width: 100%">
-            <div class="carousel-caption">
-                Notre caveau
-            </div>
-        </div>
-    </div>
-
-    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-        <span class="sr-only">Précédent</span>
-    </a>
-    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-        <span class="sr-only">Suivant</span>
-    </a>
-</div>
--->
 
 <!-- Marketing messaging and featurettes
 ================================================== -->
-<!-- Wrap the rest of the page in another container to center all the content. -->
 
 <div class="marketing">
     <div id="home">
@@ -156,6 +123,18 @@
                 <div class="col-md-7">
                     <h2 class="featurette-heading dark-purple">Vous souhaitez <span class="text-muted">nous rendre visite?</span></h2>
                     <p class="lead">Retrouvez notre caveau sur la commune de Massignieu-de-Rives, et venez découvrir notre caveau au sein de ce petit village bugiste au charme indéniable.</p>
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+            <div class="row featurette">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading dark-purple">Loisirs & tourisme <span class="text-muted">à proximité.</span></h2>
+                    <p class="lead">Entre la véloroute (ou viarhôna), le camping du lit du roi à Massignieu de Rives, la route du Bugey, vous trouverez forcément une activité proche qui vous intéressera.</p>
+                </div>
+                <div class="col-md-5">
+                    <img class="featurette-image img-responsive" alt="Image caveau" src="{{ URL::asset('images/viarhona.jpg') }}" data-holder-rendered="true">
                 </div>
             </div>
 

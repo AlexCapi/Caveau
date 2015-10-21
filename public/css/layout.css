@@ -40,6 +40,10 @@ body {
     color: #FFFFFF;
 }
 
+.recompenses {
+    margin: 0 0 50px 0;
+}
+
 a:focus{
     color: #FFFFFF !important;
     text-decoration: none !important;
@@ -98,6 +102,19 @@ a:focus{
     width: 200px;
 }
 
+.bandeau{
+    text-align: center;
+}
+
+.bandeau .img-bio{
+    width: 180px;
+}
+
+.bandeau .img-bugey{
+    width: 150px;
+    margin-left: 60px;
+}
+
 img.img-preview{
     width: 85px;
     height: 68px;
@@ -125,6 +142,10 @@ a.backTop{
 
 img.img-clickable{
     cursor: pointer;
+}
+
+#description_categories {
+    font-size: 18px;
 }
 
 /* FACEBOOK
@@ -170,7 +191,7 @@ section .section-title{
 
 section h1{
     color: #ac2925;
-    font-size: 50px;
+    font-size: 45px;
     font-weight: 300;
     line-height: 1;
     letter-spacing: -1px;
@@ -178,10 +199,29 @@ section h1{
 
 section p.section-description{
     text-align: center;
-    font-size: 35px;
+    font-size: 30px;
     font-weight: 300;
     line-height: 1;
     letter-spacing: -1px;
+}
+
+section .introduction .section-title {
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.introduction{
+    background: #AC2925;
+    margin-bottom: 50px;
+}
+
+.introduction .section-title h1 {
+    color: #ffffff;
+    margin: 0 0 30px 0;
+}
+
+.introduction .section-description {
+    color: #1F1F1F;
 }
 
 
@@ -246,15 +286,14 @@ section p.section-description{
 }
 
 .bandeau .titre-bandeau{
-    padding-top: 140px;
+    padding-top: 90px;
     color: #fff;
     font-size: 75px;
-    font-family: cursive
+    margin: 0;
 }
 .bandeau .soustitre-bandeau{
     color: #EA0700;
     font-size: 70px;
-    font-family: cursive
 }
 
 .navbar-static-top {
@@ -407,8 +446,8 @@ section p.section-description{
 
 .login{
     padding: 20px;
-    background-color: #FCFCFC;
-    border: 2px solid #D0D0D0;
+    border: 1px solid #D0D0D0;
+    box-shadow: 0px 1px 8px #D0D0D0;
     border-radius: 5px;
 }
 

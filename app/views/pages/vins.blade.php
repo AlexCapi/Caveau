@@ -11,16 +11,19 @@
 @section("content")
 <section class="header"></section>
 <section id="vins">
-    <div class="container">
-        <div class="row" id="header">
-            <div class="col-xs-12">
-                <div class="section-title">
-                    <h1>Les meilleurs vins du Bugey</h1>
-                    <p class="section-description">Consulter les fiches détaillés de nos vins. Et si vous vous laisser séduire, vous pouvez même commander en ligne.</p>
+    <div class="introduction">
+        <div class="container">
+            <div class="row" id="header">
+                <div class="col-xs-12">
+                    <div class="section-title">
+                        <h1>Les meilleurs vins du Bugey</h1>
+                        <p class="section-description">Consulter les fiches détaillées de nos vins. Et si vous vous laisser séduire, vous pouvez même commander en ligne.</p>
+                    </div>
                 </div>
             </div>
         </div>
-
+    </div>
+    <div class="container">
         <div class="row">
             <div id="description_categories" class="col-xs-12 text-center">
                 <p class="text-muted">Nos vins par catégorie</p>

@@ -11,15 +11,20 @@
 @section("content")
 <section class="header"></section>
 <section id="diaporama">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="section-title">
-                    <h1>Le caveau Quinard en photo</h1>
-                    <p class="section-description">Visionner quelques uns des plus beaux clichés du caveau, de ses employés, et du magnifique cadre qu'est le Bugey.</p>
+    <div class="introduction">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-title">
+                        <h1>Le caveau Quinard en photo</h1>
+                        <p class="section-description">Visionner quelques uns des plus beaux clichés du caveau, de ses employés, et du magnifique cadre qu'est le Bugey.</p>
+                    </div>
                 </div>
             </div>
         </div>
+    </div>
+
+    <div class="container">
         <div class="row">
             <div class="col-md-12">
                 <div class="row">

@@ -11,10 +11,14 @@
 @section("content")
 <section class="header"></section>
 <section id="caveau">
-    <div class="row" id="header">
-        <div class="col-xs-12">
-            <div class="section-title">
-                <h1>Attention</h1>
+    <div class="introduction">
+        <div class="container">
+            <div class="row" id="header">
+                <div class="col-xs-12">
+                    <div class="section-title">
+                        <h1>Attention</h1>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

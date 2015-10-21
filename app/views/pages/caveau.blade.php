@@ -11,11 +11,15 @@
 @section("content")
 <section class="header"></section>
 <section id="caveau">
-    <div class="row" id="header">
-        <div class="col-xs-12">
-            <div class="section-title">
-                <h1>Découvrez notre caveau</h1>
-                <p class="section-description">Venez nous rendre visite afin de visiter notre caveau et découvrir nos meilleurs produits locaux</p>
+    <div class="introduction">
+        <div class="container">
+            <div class="row" id="header">
+                <div class="col-xs-12">
+                    <div class="section-title">
+                        <h1>Découvrez notre caveau</h1>
+                        <p class="section-description">Venez nous rendre visite afin de visiter notre caveau et découvrir nos meilleurs produits locaux</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

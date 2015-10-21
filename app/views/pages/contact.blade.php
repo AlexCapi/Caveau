@@ -104,6 +104,7 @@
                                 Le samedi de 10h à 12h et de 15h à 18h.<br/>
                                 Le dimanche sur rendez-vous uniquement.<br/>
                                 Possibilité de prendre rendez-vous en dehors de ces plages horaires.
+                                <b>Réception guidée en trois langues : français, hollandais et anglais.</b>
                             </blockquote>
                         </div>
                     </div>

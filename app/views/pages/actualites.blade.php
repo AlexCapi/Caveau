@@ -11,16 +11,20 @@
 @section("content")
 <section class="header"></section>
 <section id="actualites">
-    <div class="container marketing">
-
-        <div class="row">
-            <div class="col-xs-12">
-                <div class="section-title">
-                    <h1><span class="glyphicon glyphicon-star"></span><br> Récompenses</h1>
-                    <p class="section-description">Jetez un oeil à l'ensemble des récompenses remportées par nos vins.</p>
+    <div class="introduction">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="section-title">
+                        <h1><span class="glyphicon glyphicon-star"></span><br> Récompenses</h1>
+                        <p class="section-description">Jetez un oeil à l'ensemble des récompenses remportées par nos vins.</p>
+                    </div>
                 </div>
             </div>
         </div>
+    </div>
+
+    <div class="container marketing">
         <div class="row">
             <div class="col-sm-8 col-sm-offset-2">
                 <div class="recompenses">
@@ -51,18 +55,22 @@
                 </div>
             </div>
         </div>
+    </div>
 
-        <hr class="featurette-divider">
-
-        <div class="row">
-            <div class="col-sm-12">
-                <div class="section-title">
-                    <h1><span class="glyphicon glyphicon-book"></span><br>Articles de presse</h1>
-                    <p class="section-description">Consulter les articles de presse spécialement sélectionné pour vous par nos soins.</p>
+    <div class="introduction">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="section-title">
+                        <h1><span class="glyphicon glyphicon-book"></span><br>Articles de presse</h1>
+                        <p class="section-description">Consulter les articles de presse spécialement sélectionné pour vous par nos soins.</p>
+                    </div>
                 </div>
             </div>
         </div>
+    </div>
 
+    <div class="container">
         <div class="row">
             <div class="col-sm-8 col-sm-offset-2">
                 <div class="table-responsive">
@@ -95,6 +103,7 @@
             </div>
         </div>
     </div>
+
     <!-- Modal -->
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog">
@@ -109,6 +118,7 @@
             </div>
         </div>
     </div>
+
 </section>
 @stop
 
