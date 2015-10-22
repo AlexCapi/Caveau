@@ -148,6 +148,17 @@ img.img-clickable{
     font-size: 18px;
 }
 
+.nbVinsCategory {
+    display: inline-block;
+    background: #fff;
+    color: #333;
+    height: 25px;
+    width: 25px;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+}
+
 /* FACEBOOK
 ------------------------- */
 
@@ -211,17 +222,17 @@ section .introduction .section-title {
 }
 
 .introduction{
-    background: #AC2925;
+    background: #eee;
     margin-bottom: 50px;
 }
 
 .introduction .section-title h1 {
-    color: #ffffff;
+    color: #ac2925;
     margin: 0 0 30px 0;
 }
 
 .introduction .section-description {
-    color: #1F1F1F;
+    color: #333;
 }
 
 

@@ -10,11 +10,11 @@
         <link href="{{ URL::asset('bower/bootstrap/dist/css/bootstrap.min.css') }}" rel="stylesheet">
         <link href="{{ URL::asset('css/style.css') }}" rel="stylesheet">
         <link href="{{ URL::asset('bower/lightgallery/light-gallery/css/lightGallery.css') }}" rel="stylesheet">
-        <link rel="shortcut icon" href="{{ URL::asset('images/favicons/favicon.ico') }}" type="image/x-icon">
-        <link rel="icon" href="{{ URL::asset('images/favicons/favicon.png') }}" type="image/png">
-        <link rel="icon" sizes="32x32" href="{{ URL::asset('images/favicons/favicon-32.png') }}" type="image/png">
-        <link rel="icon" sizes="64x64" href="{{ URL::asset('images/favicons/favicon-64.png') }}" type="image/png">
-        <link rel="icon" sizes="96x96" href="{{ URL::asset('images/favicons/favicon-96.png') }}" type="image/png">
+        <link rel="shortcut icon" href="http://caveauquinard.fr/images/favicons/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="http://caveauquinard.fr/images/favicons/favicon.png" type="image/png">
+        <link rel="icon" sizes="32x32" href="http://caveauquinard.fr/images/favicons/favicon-32.png" type="image/png">
+        <link rel="icon" sizes="64x64" href="http://caveauquinard.fr/images/favicons/favicon-64.png" type="image/png">
+        <link rel="icon" sizes="96x96" href="http://caveauquinard.fr/images/favicons/favicon-96.png" type="image/png">
     </head>
     <body>
 

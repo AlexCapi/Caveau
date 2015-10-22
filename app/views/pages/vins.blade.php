@@ -33,7 +33,7 @@
             <div id="categories" class="col-xs-12 text-center">
                 @foreach ($vinsCategories as $categorie => $vins)
                     @if(sizeof($vins) != 0)
-                        <a class="block-categorie scrollTo" href="#{{ str_replace(' ', '', $categorie) }}">{{ $categorie }}</a>
+                        <a class="block-categorie scrollTo" href="#{{ str_replace(' ', '', $categorie) }}">{{ $categorie }} <span class="nbVinsCategory">{{ count($vins) }}</span> </a>
                     @endif
                 @endforeach
             </div>
@@ -55,6 +55,7 @@
                                 <p class="lead">{{ $vin->description }}</p>
                                 <blockquote>
                                     <p>Taux Alcool : {{ $vin->tav }} %</p>
+                                    <p class="dark-purple">Prix : {{ $vin->prix }} &euro; la bouteille</p>
                                 </blockquote>
                             </div>
                             <div class="col-md-5">
@@ -81,6 +82,7 @@
                                 <p class="lead">{{ $vin->description }}</p>
                                 <blockquote>
                                     <p>Taux Alcool : {{ $vin->tav }} %</p>
+                                    <p class="dark-purple">Prix : {{ $vin->prix }} &euro; la bouteille</p>
                                 </blockquote>
 
                             </div>

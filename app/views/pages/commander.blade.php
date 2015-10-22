@@ -12,6 +12,12 @@
 <section class="header"></section>
 <section id="commander" @if($commandeEnCours) style="display:none;" @endif >
     <div class="container">
+
+        <div class="alert alert-info alert-dismissible">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            Commandez en cliquant sur les photos ci-dessous. <a href="{{ URL::to('vins') }}"><strong>Des informations plus détaillées sur nos vins sont disponibles en cliquant ici !</strong></a>
+        </div>
+
         @if (!empty(Session::get('success')))
 
         <div class="alert alert-success">{{ Session::get('success') }}</div>
