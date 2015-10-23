@@ -6,8 +6,8 @@
 	"type": "project",
 	"require": {
 		"laravel/framework": "4.2.*",
-        "frozennode/administrator": "dev-master",
-        "greggilbert/recaptcha": "dev-master"
+        "frozennode/administrator": "4.16.*",
+        "greggilbert/recaptcha": "1.1.*"
 	},
 	"autoload": {
 		"classmap": [
