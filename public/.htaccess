@@ -5,6 +5,9 @@
 
     RewriteEngine On
 
+    RewriteCond %{QUERY_STRING} ^contenu=formulaire(.*)$
+    RewriteRule ^(.*)$ /commander? [L,R=301]
+
     # Redirect Trailing Slashes...
     RewriteRule ^(.*)/$ /$1 [L,R=301]
 
