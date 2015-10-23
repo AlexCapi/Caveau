@@ -15,8 +15,8 @@
 <div class="bandeau" style="background: url({{ URL::asset('images/header.jpg') }}) no-repeat center center; background-size: cover;">
     <p class="text-center titre-bandeau">Caveau Quinard</p>
     <p class="text-center soustitre-bandeau">Viticulteur Récoltant</p>
-    <img class="text-center img-bio" src="{{ URL::asset('images/labelbio.jpg') }}">
-    <img class="text-center img-bugey" src="{{ URL::asset('images/bugey.svg') }}">
+    <img class="text-center img-bio hidden-xs" src="{{ URL::asset('images/labelbio.jpg') }}">
+    <img class="text-center img-bugey hidden-xs" src="{{ URL::asset('images/bugey.svg') }}">
 </div>
 
 <!-- Marketing messaging and featurettes
