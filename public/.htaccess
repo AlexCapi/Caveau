@@ -5,8 +5,31 @@
 
     RewriteEngine On
 
-    RewriteCond %{QUERY_STRING} ^contenu=formulaire(.*)$
+    RewriteCond %{QUERY_STRING} ^contenu=formulaire/comm(.*)$
     RewriteRule ^(.*)$ /commander? [L,R=301]
+
+    RewriteCond %{QUERY_STRING} ^contenu=formulaire/contact(.*)$
+    RewriteRule ^(.*)$ /contact? [L,R=301]
+
+    RewriteCond %{QUERY_STRING} ^contenu=pages/caveau(.*)$
+    RewriteRule ^(.*)$ /caveau? [L,R=301]
+
+    RewriteCond %{QUERY_STRING} ^contenu=pages/accueil(.*)$
+    RewriteRule ^(.*)$ /? [L,R=301]
+
+    RewriteCond %{QUERY_STRING} ^contenu=pages/produit(.*)$
+    RewriteRule ^(.*)$ /vins? [L,R=301]
+
+    RewriteCond %{QUERY_STRING} ^contenu=pages/recompenses(.*)$
+    RewriteRule ^(.*)$ /actualites? [L,R=301]
+
+    RewriteCond %{QUERY_STRING} ^contenu=pages/presse(.*)$
+    RewriteRule ^(.*)$ /actualites? [L,R=301]
+
+    RewriteRule ^datas/frais_transport.pdf$ /documents/frais_transport.pdf? [L,R=301]
+
+    RewriteCond %{QUERY_STRING} ^contenu=pages/(.*)$
+    RewriteRule ^(.*)$ /? [L,R=301]
 
     # Redirect Trailing Slashes...
     RewriteRule ^(.*)/$ /$1 [L,R=301]
