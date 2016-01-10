@@ -166,7 +166,7 @@
                     <h5 class="title-selection">Explications</h5>
                     <p class="text-left explications">L'envoi de ce formulaire constitue une pré-commande. nous vous recontacterons ensuite dans les plus brefs délais afin de finaliser votre commande, majorée des frais d'expédition.<br/>
                         La commande sera expédié après réception d'un chèque.<br/>
-                        Découvrez nos frais de transports ici : <a href="{{ URL::asset('documents/frais_transport.pdf') }}" target="_blank"> tarifs</a><br/>
+                        <strong>Les frais de transport sont à votre charge</strong>, et nous vous les transmettrons une fois votre commande effectuée.<br/>
                         Possibilitée de retrait de la commande sur place.<br/>
                         Pour tout renseignement veuillez nous appelez au 04 79 42 10 18
                     </p>

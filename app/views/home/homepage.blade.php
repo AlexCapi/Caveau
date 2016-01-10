@@ -131,7 +131,7 @@
             <div class="row featurette last-featurette">
                 <div class="col-md-7">
                     <h2 class="featurette-heading dark-purple">Loisirs & tourisme <span class="text-muted">à proximité.</span></h2>
-                    <p class="lead">Entre la véloroute (ou viarhôna), le camping du lit du roi à Massignieu de Rives, la route du Bugey, vous trouverez forcément une activité proche qui vous intéressera.</p>
+                    <p class="lead">Entre la véloroute (ou viarhôna), <a href="http://www.camping-savoie.com/"> le camping du lit du roi à Massignieu de Rives</a>, la route du Bugey, vous trouverez forcément une activité proche qui vous intéressera.</p>
                 </div>
                 <div class="col-md-5">
                     <img class="featurette-image img-responsive" alt="Image caveau" src="{{ URL::asset('images/viarhona.jpg') }}" data-holder-rendered="true">
