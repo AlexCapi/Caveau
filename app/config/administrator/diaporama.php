@@ -47,7 +47,7 @@ return array(
             'location' => public_path() . '/images/uploads/originals/',
             'naming' => 'random',
             'length' => 20,
-            'size_limit' => 2,
+            'size_limit' => 20,
             'sizes' => array(
                 array(65, 57, 'crop', public_path() . '/images/uploads/thumbs/small/', 100),
                 array(220, 138, 'landscape', public_path() . '/images/uploads/thumbs/medium/', 100),

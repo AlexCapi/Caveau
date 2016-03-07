@@ -36,7 +36,7 @@ return array(
             'location' => public_path() . '/documents/',
             'naming' => 'random',
             'length' => 20,
-            'size_limit' => 2
+            'size_limit' => 20
         )
     ),
 );
