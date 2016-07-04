@@ -560,6 +560,10 @@ a.block-categorie:hover{
     list-style: none;
 }
 
+#lg-gallery.show-after-load .lg-slide.complete > * {
+    color: #ffffff !important;
+}
+
 /* Commander
 ------------------------- */
 
